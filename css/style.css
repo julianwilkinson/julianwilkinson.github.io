@@ -1,0 +1,64 @@
+/*Generic Classes*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #6699ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+a {
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Navigation Menu*/
+.navbar {
+  padding: 20px 0;
+}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Main Content*/
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.content_box {
+  width: 75%;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 8em;
+}
