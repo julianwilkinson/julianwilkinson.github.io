@@ -29,16 +29,17 @@ a:link, a:visited, a:hover, a:active {
 /*Navigation Menu*/
 .navbar {
   padding: 30px 0;
+  transition: all .2s linear; /*hide*/
 }
 .container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row; nowrap;
   justify-content: center;
   align-items: center;
 }
 
 /*Main Content*/
-.page {
+.index_page {
   height: 100%;
   width: 100%;
 }
@@ -54,6 +55,7 @@ a:link, a:visited, a:hover, a:active {
 
 .content_box {
   width: 75%;
+  max-width: 800px;
 }
 
 .banner {
@@ -68,4 +70,54 @@ a:link, a:visited, a:hover, a:active {
 .banner h2 {
   font-size: 2em;
   font-family: 'Raleway', sans-serif;
+}
+
+/*about page*/
+.about_page {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/*projects page*/
+.projects_page {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/*animations*/
+#about
+
+.normal {
+  opacity: 1;
+}
+
+.hide {
+  transition: all .2s linear;
+}
+
+.projects {
+  transition: all .2s linear;
+}
+
+.hide-active {
+  opacity: 0;
+}
+
+
+
+.jw {
+
 }
