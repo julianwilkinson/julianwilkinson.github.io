@@ -1,6 +1,6 @@
 /*Generic Classes*/
 html {
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 
 html, body {
@@ -10,7 +10,13 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #6699ff;
+  /*background-color: #6699ff;*/
+  background: linear-gradient(to bottom, #6699ff 0%,#a8c5ff 100%);
+  /*background: linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transform: translateZ(-1);
+  /*background-position: center;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -136,6 +142,11 @@ a:hover {
 
 
 /*projects page*/
+
+.index_page {
+  transform: translateZ(1);
+}
+
 .projects_page {
   height: 100%;
   width: 100%;
