@@ -7,16 +7,14 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
-  /*background-color: #6699ff;*/
   background: linear-gradient(to bottom, #6699ff 0%,#a8c5ff 100%);
-  /*background: linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   transform: translateZ(-1);
-  /*background-position: center;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,14 +36,7 @@ a:link, a:visited, a:hover, a:active {
 a:hover {
   background-color: rgba(255, 255, 255, 0.25);
   transition: .15s;
-  /*color:  #6699ff;*/
 }
-
-/*a:active a:hover {
-  transition: 2s;
-  background-color: rgba(255, 255, 255, 0.75);
-  color: #6699ff;
-}*/
 
 /*Navigation Menu*/
 .navbar {
@@ -53,18 +44,15 @@ a:hover {
 }
 
 #about_button {
-  transition: all .2s linear; /*hide*/
 }
 
 #projects_button {
-  transition: all .2s linear; /*hide*/
 }
 
 #contact_button {
-  transition: all .2s linear; /*hide*/
 }
 
-.container {
+.navbar {
   display: flex;
   flex-flow: row; nowrap;
   justify-content: center;
@@ -72,6 +60,12 @@ a:hover {
 }
 
 /*Main Content*/
+.pages {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
 .index_page {
   height: 100%;
   width: 100%;
@@ -106,6 +100,12 @@ a:hover {
 }
 
 /*about page*/
+#about.about_page {
+  left:0;
+  right: 0;
+  margin: auto;
+  padding-top: 10px;
+}
 .about_page {
   height: 100%;
   width: 100%;
@@ -128,69 +128,18 @@ a:hover {
   font-size: 3em;
 }
 
-#about_one.card {
-  position: absolute;
-  left:0;
-  right: 0;
-  margin: auto;
-  transition: all .2s ease-in;
-}
-
-.cardup {
-  transform: translateY(-50vh);
-}
-
 
 /*projects page*/
 
-.index_page {
-  transform: translateZ(1);
+#projects.projects_page {
+  left:0;
+  right: 0;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.projects_page {
+.projectsipage {
   height: 100%;
   width: 100%;
-}
-
-
-
-/*animations*/
-.about {
-  transition: all 1s ease-out;
-  display: inline-block;
-
-}
-
-.normal {
-  opacity: 1;
-}
-
-.hide {
-  transition: all .2s ease-out;
-}
-
-.grow {
-  transform: scale(1.1);
-}
-
-.projects {
-  transition: all .2s ease-out;
-}
-
-.hide-active {
-  opacity: 0;
-}
-
-.about_header_animx {
-  transform:translateX(-45vw);
-}
-
-.about_header_animy {
-  transform:translateX(-45vw) translateY(-25vh);
-}
-
-
-
-.jw {
-
 }
