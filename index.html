@@ -1,54 +1,202 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="theme-color" content="#6699ff">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!-- <script src="about.js"></script> -->
-  <!-- <script src="projects.js"></script> -->
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#6699ff">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-  <div class="banner">
-    <h1>Hi! I'm Julian.</h1>
-    <h2>I'm a Computer Science student.</h2>
-  </div>
-  <div class="navbar">
-    <a id="about" href="#about">About</a>
-    <a id="projects" href="#projects">Projects</a>
-    <a id="contact" href="mailto:wilkinsonjulian@gmail.com">Contact</a>
-  </div>
-  <div class = "card">
-    <span>Julian</span>
-    <p>
+	<div id="banner">
+		<div class="animation-wrapper">
+			<span>This page is under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though :)</span>
+			<span>This page is under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though :)</span>
+		</div>
+	</div>
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus. Morbi ullamcorper scelerisque condimentum. Nulla facilisi. Praesent ullamcorper viverra lorem id mattis.
+	<div class="page">
+		<div id="home">
+			<div class="banner">
+				<h1>Hi! I'm Julian.</h1>
+				<h2>I like solving problems with Computer Science.</h2>
+			</div>
+			<div class="main-menu">
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact-me">Contact</a>
+			</div>
+		</div>
+	</div>
+	<!-- ===== END HOME PAGE =====  -->
 
-      Sed rhoncus imperdiet lacus, posuere dictum velit. Sed porttitor pellentesque suscipit. Sed non tortor sit amet metus vehicula ornare. Nullam accumsan, felis quis convallis consequat, turpis leo auctor tellus, et ornare sem dolor eget lacus. Etiam vel quam sed urna semper luctus at vel mauris. Donec et porttitor odio, sit amet blandit nibh. Pellentesque elementum nulla vitae magna vulputate, ut mollis diam vulputate.
 
-      Pellentesque a arcu justo. Aliquam fermentum nibh est, ac facilisis risus vehicula eu. Suspendisse id aliquet sem. Sed quis leo feugiat, fermentum mauris eget, gravida tellus. Nam euismod eget lorem id venenatis. Praesent elementum sapien at nisi rutrum, sit amet condimentum leo accumsan. Mauris luctus eros tincidunt, ullamcorper elit et, congue justo. Pellentesque efficitur interdum ligula in tincidunt. Aenean non libero et ex tincidunt vehicula molestie at sem. Nulla vitae fermentum urna. Nulla facilisi. Vivamus sollicitudin sagittis lacus tincidunt semper. Cras volutpat enim eu odio laoreet commodo. Vestibulum sed odio suscipit, scelerisque ex id, elementum tellus.
+	<!-- ===== BEGIN ABOUT PAGE =====  -->
+	<div class="page" id="about">
+		<div class="carousel-wrapper">
+			<div class="carousel-unit" id="about-card-main-carousel-unit">
+				<div class="header">
+					<h1>Julian</h1>
+				</div>
+				<div class="card-wrapper" id="about-card-main">
+					<div class="card">
+						<div class="profile-picture-wrapper">
+							<img src="media\me.jpg" id="profile-picture"/>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus. Morbi ullamcorper scelerisque condimentum. Nulla facilisi. Praesent ullamcorper viverra lorem id mattis. Sed rhoncus imperdiet lacus, posuere dictum velit. Sed porttitor pellentesque suscipit. Sed non tortor sit amet metus vehicula ornare. Nullam accumsan, felis quis convallis consequat, turpis leo auctor tellus, et ornare sem dolor eget lacus. Etiam vel quam sed urna semper luctus at vel mauris. Donec et porttitor odio, sit amet blandit nibh. Pellentesque elementum nulla vitae magna vulputate, ut mollis diam vulputate.Pellentesque a arcu justo. Aliquam fermentum nibh est, ac facilisis risus vehicula eu. Suspendisse id aliquet sem. Sed quis leo feugiat, fermentum mauris eget, gravida tellus. Nam euismod eget lorem id venenatis. Praesent elementum sapien at nisi rutrum, sit amet condimentum leo accumsan. Mauris luctus eros tincidunt, ullamcorper elit et, congue justo. Pellentesque efficitur interdum ligula in tincidunt. Aenean non libero et ex tincidunt vehicula molestie at sem. Nulla vitae fermentum urna. Nulla facilisi. Vivamus sollicitudin sagittis lacus tincidunt semper. Cras volutpat enim eu odio laoreet commodo. Vestibulum sed odio suscipit, scelerisque ex id, elementum tellus. Sed nec enim est. Nam gravida leo a metus tincidunt commodo. Suspendisse rhoncus rutrum fermentum. Pellentesque auctor semper varius. Aliquam rhoncus cursus ex ut feugiat. Donec vel neque sapien. Praesent iaculis diam eu velit vehicula fermentum. Sed cursus turpis massa, et pharetra nisi gravida sed. Donec faucibus euismod eros, ut commodo lorem accumsan vel.
+						</p>
+					</div>
+				</div>
 
-      Sed nec enim est. Nam gravida leo a metus tincidunt commodo. Suspendisse rhoncus rutrum fermentum. Pellentesque auctor semper varius. Aliquam rhoncus cursus ex ut feugiat. Donec vel neque sapien. Praesent iaculis diam eu velit vehicula fermentum. Sed cursus turpis massa, et pharetra nisi gravida sed. Donec faucibus euismod eros, ut commodo lorem accumsan vel.
+				<div class="card-wrapper" id="">
+					<div class="card nav-card">
+						<span class="nav-card-label">Academics</span>
+					</div>
+					<div class="nav-card-button-wrapper">
+						<a  onclick="cardRoute(this)" title="Academics" id="academics-button"><i class="material-icons">school</i></a>
+					</div>
+				</div>
 
-      Mauris tempus, metus at tempus varius, neque metus accumsan eros, ut sagittis nibh arcu vel lectus. Curabitur sit amet suscipit risus, eu dictum lorem. Morbi facilisis mi id tempor suscipit. In felis mi, congue pretium ullamcorper ut, finibus eget quam. Integer eu ornare leo. Suspendisse dictum malesuada urna, sed ornare nibh vestibulum et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur iaculis molestie urna, ac fringilla sem tincidunt at. Aliquam quis luctus diam. In ut ipsum facilisis, semper dolor eu, blandit justo. Duis suscipit rutrum mi nec vulputate. Sed imperdiet porta mauris, id lacinia turpis accumsan quis. Integer fringilla laoreet nibh, id condimentum quam lobortis eu. Fusce vitae ultricies elit. Duis turpis nibh, facilisis eu lectus a, ullamcorper iaculis est.
-    </p>
-  </div>
-  <div class = "card">
-    <span>Projects</span>
-    <p>
+				<div class="card-wrapper" id="">
+					<div class="card nav-card">
+						<span class="nav-card-label" >Volunteering</span>
+					</div>
+					<div class="nav-card-button-wrapper">
+						<a onclick="cardRoute(this)" id="volunteering-button" title="Volunteering"><i class="material-icons">favorite</i></a>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-unit" id="academics-card-carousel-unit">
+				<div class="header">
+					<h1>Academics</h1>
+				</div>
+				<div class="card-wrapper" id="academics-card">
+					<div class="card">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus. Morbi ullamcorper scelerisque condimentum. Nulla facilisi. Praesent ullamcorper viverra lorem id mattis. Sed rhoncus imperdiet lacus, posuere dictum velit. Sed porttitor pellentesque suscipit. Sed non tortor sit amet metus vehicula ornare. Nullam accumsan, felis quis convallis consequat, turpis leo auctor tellus, et ornare sem dolor eget lacus. Etiam vel quam sed urna semper luctus at vel mauris. Donec et porttitor odio, sit amet blandit nibh. Pellentesque elementum nulla vitae magna vulputate, ut mollis diam vulputate.Pellentesque a arcu justo. Aliquam fermentum nibh est, ac facilisis risus vehicula eu. Suspendisse id aliquet sem. Sed quis leo feugiat, fermentum mauris eget, gravida tellus. Nam euismod eget lorem id venenatis. Praesent elementum sapien at nisi rutrum, sit amet condimentum leo accumsan. Mauris luctus eros tincidunt, ullamcorper elit et, congue justo. Pellentesque efficitur interdum ligula in tincidunt. Aenean non libero et ex tincidunt vehicula molestie at sem. Nulla vitae fermentum urna. Nulla facilisi. Vivamus sollicitudin sagittis lacus tincidunt semper. Cras volutpat enim eu odio laoreet commodo. Vestibulum sed odio suscipit, scelerisque ex id, elementum tellus. Sed nec enim est. Nam gravida leo a metus tincidunt commodo. Suspendisse rhoncus rutrum fermentum. Pellentesque auctor semper varius. Aliquam rhoncus cursus ex ut feugiat. Donec vel neque sapien. Praesent iaculis diam eu velit vehicula fermentum. Sed cursus turpis massa, et pharetra nisi gravida sed. Donec faucibus euismod eros, ut commodo lorem accumsan vel.
+						</p>
+					</div>
+				</div>
+				<div class="card-wrapper" id="">
+					<div class="card nav-card">
+						<span class="nav-card-label">Back</span>
+					</div>
+					<div class="nav-card-button-wrapper">
+						<a title="Back" id="back-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-unit" id="volunteering-card-carousel-unit">
+				<div class="header">
+					<h1>Volunteering</h1>
+				</div>
+				<div class="card-wrapper" id="academics-card">
+					<div class="card">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus. Morbi ullamcorper scelerisque condimentum. Nulla facilisi. Praesent ullamcorper viverra lorem id mattis. Sed rhoncus imperdiet lacus, posuere dictum velit. Sed porttitor pellentesque suscipit. Sed non tortor sit amet metus vehicula ornare. Nullam accumsan, felis quis convallis consequat, turpis leo auctor tellus, et ornare sem dolor eget lacus. Etiam vel quam sed urna semper luctus at vel mauris. Donec et porttitor odio, sit amet blandit nibh. Pellentesque elementum nulla vitae magna vulputate, ut mollis diam vulputate.Pellentesque a arcu justo. Aliquam fermentum nibh est, ac facilisis risus vehicula eu. Suspendisse id aliquet sem. Sed quis leo feugiat, fermentum mauris eget, gravida tellus. Nam euismod eget lorem id venenatis. Praesent elementum sapien at nisi rutrum, sit amet condimentum leo accumsan. Mauris luctus eros tincidunt, ullamcorper elit et, congue justo. Pellentesque efficitur interdum ligula in tincidunt. Aenean non libero et ex tincidunt vehicula molestie at sem. Nulla vitae fermentum urna. Nulla facilisi. Vivamus sollicitudin sagittis lacus tincidunt semper. Cras volutpat enim eu odio laoreet commodo. Vestibulum sed odio suscipit, scelerisque ex id, elementum tellus. Sed nec enim est. Nam gravida leo a metus tincidunt commodo. Suspendisse rhoncus rutrum fermentum. Pellentesque auctor semper varius. Aliquam rhoncus cursus ex ut feugiat. Donec vel neque sapien. Praesent iaculis diam eu velit vehicula fermentum. Sed cursus turpis massa, et pharetra nisi gravida sed. Donec faucibus euismod eros, ut commodo lorem accumsan vel.
+						</p>
+					</div>
+				</div>
+				<div class="card-wrapper" id="">
+					<div class="card nav-card">
+						<span class="nav-card-label">Back</span>
+					</div>
+					<div class="nav-card-button-wrapper">
+						<a title="Back" id="back-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ===== END ABOUT PAGE =====  -->
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus. Morbi ullamcorper scelerisque condimentum. Nulla facilisi. Praesent ullamcorper viverra lorem id mattis.
 
-      Sed rhoncus imperdiet lacus, posuere dictum velit. Sed porttitor pellentesque suscipit. Sed non tortor sit amet metus vehicula ornare. Nullam accumsan, felis quis convallis consequat, turpis leo auctor tellus, et ornare sem dolor eget lacus. Etiam vel quam sed urna semper luctus at vel mauris. Donec et porttitor odio, sit amet blandit nibh. Pellentesque elementum nulla vitae magna vulputate, ut mollis diam vulputate.
+	<!-- ===== BEGIN PROJECTS PAGE =====  -->
+	<div class="page" id="projects">
+		<div class="header header-card">
+			<h1>Projects</h1>
+			<div class="card-wrapper" id="project-header-card">
+				<div class="card">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus.
+					</p>
+				</div>
+			</div>
+		</div>
 
-      Pellentesque a arcu justo. Aliquam fermentum nibh est, ac facilisis risus vehicula eu. Suspendisse id aliquet sem. Sed quis leo feugiat, fermentum mauris eget, gravida tellus. Nam euismod eget lorem id venenatis. Praesent elementum sapien at nisi rutrum, sit amet condimentum leo accumsan. Mauris luctus eros tincidunt, ullamcorper elit et, congue justo. Pellentesque efficitur interdum ligula in tincidunt. Aenean non libero et ex tincidunt vehicula molestie at sem. Nulla vitae fermentum urna. Nulla facilisi. Vivamus sollicitudin sagittis lacus tincidunt semper. Cras volutpat enim eu odio laoreet commodo. Vestibulum sed odio suscipit, scelerisque ex id, elementum tellus.
+		<div class="carousel-wrapper">
+			<div class="carousel-unit projects" id="project-page-1">
+				<div class="card project-card" id="safer">
+					<span class="project-card-label">Safer</span>
+					<canvas class="project-card-background">
 
-      Sed nec enim est. Nam gravida leo a metus tincidunt commodo. Suspendisse rhoncus rutrum fermentum. Pellentesque auctor semper varius. Aliquam rhoncus cursus ex ut feugiat. Donec vel neque sapien. Praesent iaculis diam eu velit vehicula fermentum. Sed cursus turpis massa, et pharetra nisi gravida sed. Donec faucibus euismod eros, ut commodo lorem accumsan vel.
+					</canvas>
+					<div class="project-card-button-div">
+						<a class="project-card-button">LEARN MORE</a>
+					</div>
+				</div>
 
-      Mauris tempus, metus at tempus varius, neque metus accumsan eros, ut sagittis nibh arcu vel lectus. Curabitur sit amet suscipit risus, eu dictum lorem. Morbi facilisis mi id tempor suscipit. In felis mi, congue pretium ullamcorper ut, finibus eget quam. Integer eu ornare leo. Suspendisse dictum malesuada urna, sed ornare nibh vestibulum et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur iaculis molestie urna, ac fringilla sem tincidunt at. Aliquam quis luctus diam. In ut ipsum facilisis, semper dolor eu, blandit justo. Duis suscipit rutrum mi nec vulputate. Sed imperdiet porta mauris, id lacinia turpis accumsan quis. Integer fringilla laoreet nibh, id condimentum quam lobortis eu. Fusce vitae ultricies elit. Duis turpis nibh, facilisis eu lectus a, ullamcorper iaculis est.
-    </p>
-  </div>
+				<div class="card project-card" id="rejected-job-postings">
+					<span class="project-card-label">Rejected Job Postings Manager</span>
+					<div class="project-card-button-div">
+						<a class="project-card-button">LEARN MORE</a>
+					</div>
+				</div>
+
+				<div class="card project-card" id="fraudulent-job-postings">
+					<span class="project-card-label">Fraudulent Job Postings Information and Resources</span>
+					<div class="project-card-button-div">
+						<a class="project-card-button">LEARN MORE</a>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-unit" id="academics-card-carousel-unit">
+				<div class="card-wrapper" id="academics-card">
+					<div class="card">
+						<h1>UC Davis</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus. Morbi ullamcorper scelerisque condimentum. Nulla facilisi. Praesent ullamcorper viverra lorem id mattis. Sed rhoncus imperdiet lacus, posuere dictum velit. Sed porttitor pellentesque suscipit. Sed non tortor sit amet metus vehicula ornare. Nullam accumsan, felis quis convallis consequat, turpis leo auctor tellus, et ornare sem dolor eget lacus. Etiam vel quam sed urna semper luctus at vel mauris. Donec et porttitor odio, sit amet blandit nibh. Pellentesque elementum nulla vitae magna vulputate, ut mollis diam vulputate.Pellentesque a arcu justo. Aliquam fermentum nibh est, ac facilisis risus vehicula eu. Suspendisse id aliquet sem. Sed quis leo feugiat, fermentum mauris eget, gravida tellus. Nam euismod eget lorem id venenatis. Praesent elementum sapien at nisi rutrum, sit amet condimentum leo accumsan. Mauris luctus eros tincidunt, ullamcorper elit et, congue justo. Pellentesque efficitur interdum ligula in tincidunt. Aenean non libero et ex tincidunt vehicula molestie at sem. Nulla vitae fermentum urna. Nulla facilisi. Vivamus sollicitudin sagittis lacus tincidunt semper. Cras volutpat enim eu odio laoreet commodo. Vestibulum sed odio suscipit, scelerisque ex id, elementum tellus. Sed nec enim est. Nam gravida leo a metus tincidunt commodo. Suspendisse rhoncus rutrum fermentum. Pellentesque auctor semper varius. Aliquam rhoncus cursus ex ut feugiat. Donec vel neque sapien. Praesent iaculis diam eu velit vehicula fermentum. Sed cursus turpis massa, et pharetra nisi gravida sed. Donec faucibus euismod eros, ut commodo lorem accumsan vel.
+						</p>
+					</div>
+				</div>
+				<div class="card-wrapper" id="">
+					<div class="card nav-card">
+						<span class="project-card-label">Back</span>
+					</div>
+					<div class="nav-card-button-wrapper">
+						<a href="#about" id="back-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ===== END PROJECTS PAGE =====  -->
+
+
+	<!-- ===== BEGIN CONTACT ME PAGE =====  -->
+	<div class="page" id="contact-me">
+		<div class="card-wrapper">
+			<div class="card" id="contact-card">
+				<h1>Julian Wilkinson</h1>
+				<h2>Computer Science Student</h2>
+				<span>Email: <a title="Email" href="mailto:wilkinsonjulian@gmail.com">wilkinsonjulian@gmail.com</a> </span>
+				<span>LinkedIn®: <a title="LinkedIn®" href="https://www.linkedin.com/in/julianbwilkinson/" target="_blank">julianbwilkinson</a> </span>
+				<span>Resume: <a title="Resume" href="media/Julian_Wilkinson_Resume.pdf" target="_blank">julianbwilkinson</a> </span>
+
+			</div>
+			<div class="card-nav-tab-wrapper">
+				<a id="" title="Email" href="mailto:wilkinsonjulian@gmail.com"><i class="material-icons">email</i></a>
+				<a id="LinkedIn-button" title="LinkedIn®" href="https://www.linkedin.com/in/julianbwilkinson/" target="_blank"><img id="LinkedIn-logo" src="media/LinkedIn/In-2C-128px-R.png" /></a>
+				<a id="" title="Resume" href="media/Julian_Wilkinson_Resume.pdf" target="_blank"><i class="material-icons">description</i></a>
+			</div>
+		</div>
+	</div>
+	<!-- ===== END CONTACT ME PAGE =====  -->
 </body>
 </html>
