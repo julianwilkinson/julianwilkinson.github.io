@@ -117,16 +117,16 @@ a, a:link, a:visited, a:hover, a:active {
 	height: 100vh;
 }
 
-.banner {
+#home .banner {
 	text-align: center;
 }
 
-.banner h1 {
+#home .banner h1 {
 	font-size: 8em;
 	font-family: 'Lobster', cursive;
 }
 
-.banner h2 {
+#home .banner h2 {
 	font-size: 2em;
 	font-family: 'Raleway', sans-serif;
 }
