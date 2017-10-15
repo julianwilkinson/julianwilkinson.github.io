@@ -5,7 +5,7 @@
 	--button-offset-inactive: 10px;
 	--button-offset-label-hovered: 30px;
 	--button-offset-label-hovered-jump: 35px;
-	--button-offset-opened: calc(var(--button-size) - var(--button-offset-normal));
+	--button-offset-opened: calc(var(--button-size) - var(--button-offset-inactive));
 
 	/*--NAVIGATION BAR*/
 	--navigation-bar-x-offset: calc((-1 * var(--button-size)) + (-1 * var(--button-icon-right-padding)) + (1 * var(--nav-card-x-offset)) + var(--button-offset-inactive));
@@ -13,7 +13,7 @@
 	--nav-card-x-offset: calc(var(--button-size) / 2);
 
 	/*--CARDS*/
-	--card-width: 600px;
+	--card-width: 800px;
 	--contacts-card-width: 500px;
 	--card-x-padding: 20px;
 	--card-y-padding: 10px;
@@ -22,12 +22,14 @@
 
 	--card-offscreen-right: calc(50vw + (var(--card-width) / 2) + var(--card-x-padding) + var(--card-blur));
 	--card-offscreen-left: calc(-1 * var(--card-offscreen-right));
-	--card-left-side-peek-in: calc(var(--card-blur) + var(--card-x-padding) + 20px);
+	--card-left-side-peek-in: calc(var(--card-offscreen-left) + var(--card-blur) + var(--card-x-padding) + 30px);
 	--card-right-side-peek-in: calc(-1 * var(--card-left-side-peek-in));
 
-	--projects-card-width: 140px;
+	--projects-card-width: 150px;
 	--projects-card-real-width: calc(var(--projects-card-width) + (2*var(--card-x-padding)));
-	--projects-card-height: 200px;
+	--projects-card-height: 220px;
+	--projects-card-real-height: calc(var(--projects-card-height) + (2*var(--card-y-padding)));
+
 }
 
 
@@ -44,6 +46,8 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	color: #ffffff;
 }
+
+
 /*-------------------- END BOILERPLATE --------------------*/
 
 /*-------------------- BEGIN BACKGROUND --------------------*/
@@ -67,15 +71,16 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	user-select: none;
 }
-a {
+.main-menu a {
 	padding: 10px 20px;
 	font-family: 'Raleway', sans-serif;
 }
 
-a:link, a:visited, a:hover, a:active {
+a, a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
-	color: #ffffff;
+	color: #fff;
 }
 
 .main-menu a:hover {
@@ -92,6 +97,13 @@ a:link, a:visited, a:hover, a:active {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+}
+.page footer {
+	position: absolute;
+	padding-bottom: 10px;
+	bottom: 0;
+	color: #fff;
 }
 /*-------------------- END PAGE WRAPPER --------------------*/
 
@@ -178,6 +190,13 @@ a:link, a:visited, a:hover, a:active {
 	color: #000;
 	padding: 0;
 }
+
+.card a{
+	color: #000;
+	text-decoration: underline;
+	margin: 0;
+	padding: 0;
+}
 .card-wrapper {
 	/*transform: translate(var(--card-offset));*/
 	display: flex;
@@ -197,6 +216,8 @@ a:link, a:visited, a:hover, a:active {
 .header-card h1 {
 	margin-bottom: 5px;
 }
+
+
 /*-------------------- END CARDS --------------------*/
 
 
@@ -238,6 +259,7 @@ a:link, a:visited, a:hover, a:active {
 	box-shadow: 0 10px var(--card-blur) rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	cursor: pointer;
 	text-decoration: none !important;
+	user-select: none;
 }
 
 .nav-card-button-wrapper a i {
@@ -262,8 +284,30 @@ a:link, a:visited, a:hover, a:active {
 	80%, 100% {transform: translate(var(--button-offset-label-hovered),0);}
 }
 
-.nav-card-button-wrapper a:hover:active, .nav-card-button-wrapper a:active {
-	transform: translate(var(--button-offset-opened));
+@keyframes no-anim {
+}
+
+.nav-card-button-wrapper a.animated {
+	animation: tab-click-animation .5s ease-in;
+}
+
+.nav-card-button-wrapper #volunteering-button.animated i {
+	animation: volunteering-button-heart-animation 1s;
+}
+@keyframes volunteering-button-heart-animation {
+	0% {
+		color: inherit;
+	}
+	100% {
+		color: red;
+	}
+}
+
+
+@keyframes tab-click-animation {
+	0% {transform: translate(var(--button-offset-label-hovered));}
+	50% {transform: translate(var(--button-offset-opened));}
+	100% {transform: translate(var(--button-offset-label-hovered));}
 }
 /*-------------------- END NAV-CARDS --------------------*/
 
@@ -275,7 +319,7 @@ a:link, a:visited, a:hover, a:active {
 	justify-content: space-around;
 	align-items: center;
 	align-content: space-around;
-	/*height: 500px;*/
+	height: 500px;
 	width: var(--card-width);
 }
 
@@ -291,8 +335,18 @@ a:link, a:visited, a:hover, a:active {
 	height: var(--projects-card-height);
 	position: relative;
 	overflow: hidden;
-	color: #000;
+	color: #fff;
+	transition: all .25s ease-out;
+	user-select: none;
 }
+
+.project-card[disabled] {
+	opacity: .5;
+	pointer-events: none;
+}
+
+
+
 
 .project-card-background {
 	position: absolute;
@@ -300,11 +354,55 @@ a:link, a:visited, a:hover, a:active {
 	top: 0;
 	left: 0;
 	width: var(--projects-card-real-width);
-	height: 300px;
+	height: var(--projects-card-real-height);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
+#safer .project-card-background {
+	background-color: #402aff;
+}
+
+#safer .project-card-background .logo {
+	height: 100px;
+	margin-bottom: 20px;
+	/*animation: safer-logo-animation 1.5s ease-in-out infinite;*/
+}
+
+@keyframes safer-logo-animation {
+	0%, 100% {
+		transform: translate(0,0);
+	}
+	10% {
+		transform: translate(0,-1px) rotate(-5deg);
+	}
+	20% {
+		transform: translate(0,-1px) rotate(5deg);
+	}
+	30% {
+		transform: translate(0,-2px) rotate(-5deg);
+	}
+	40% {
+		transform: translate(0,-2px) rotate(5deg);
+	}
+	50% {
+		transform: translate(0,-3px) rotate(-5deg);
+	}
+	60% {
+		transform: translate(0,-3px) rotate(0);
+	}
+}
+
+#rejected-job-postings .project-card-background, #fraudulent-job-postings .project-card-background {
+	background-color: #002855;
+}
+
+
+
 .project-card-label {
-	font-size: 20px;
+	font-size: 25px;
+	transform: translateX(-5px);
 	position: absolute;
 	z-index: 2;
 }
@@ -325,7 +423,6 @@ a:link, a:visited, a:hover, a:active {
 }
 .project-card-button-div::before{
 	content: "";
-	/*background-color: #fff;*/
 	position: absolute;
 	left: -50px;
 	right: 0;
@@ -339,6 +436,7 @@ a:link, a:visited, a:hover, a:active {
 }
 a.project-card-button {
 	width: var(--projects-card-real-width);
+	color: #D3D3D3;
 	height: 40px;
 	position: absolute;
 	left: 0;
@@ -352,14 +450,21 @@ a.project-card-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
+	user-select: none;
 }
-a.project-card-button:hover{
-	color: #000;
-	background-color: rgba(0, 0, 0, 0.1)
+.project-card:hover  {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: all .25s ease-out;
+	transform: translateY(-1px);
 }
 .project-card-button-div:active::before {
-	filter: brightness(0);
+	filter: brightness(.75);
 }
+.project-card-button-div:active a.project-card-button {
+	color: #fff;
+}
+
 
 
 /*-------------------- END PROJECT CARDS --------------------*/
@@ -451,6 +556,7 @@ a.project-card-button:hover{
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+	user-select: none;
 }
 
 #banner span {
