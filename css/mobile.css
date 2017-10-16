@@ -1,5 +1,5 @@
 :root {
-		--card-width: 300px;
+		--card-width: 92vw;
 }
 
 /*-------------------- BEGIN PAGE BANNER --------------------*/
@@ -38,3 +38,34 @@
 	transition: .15s;
 }
 /*-------------------- END NAVIGATION BAR TEMPLATE --------------------*/
+
+/*-------------------- BEGIN ABOUT CARD --------------------*/
+#about-card-main .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#about-card-main h1 {
+	align-self: flex-start;
+}
+#about-card-main .profile-picture-wrapper {
+	position: relative;
+	margin: 15px;
+	width: 100%;
+	/*height: 50vw;*/
+	/*height: 250px;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	box-shadow: inset 0 10px 20px rgba(0,0,0,0.19), 0 0px 6px rgba(0,0,0,0.23);
+	border-radius: 100%;
+	z-index: 1;
+}
+
+#profile-picture {
+	width: inherit;
+	height: auto;
+}
+/*-------------------- BEGIN ABOUT CARD --------------------*/

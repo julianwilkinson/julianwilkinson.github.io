@@ -470,7 +470,7 @@ a.project-card-button {
 /*-------------------- END PROJECT CARDS --------------------*/
 
 /*-------------------- BEGIN ABOUT CARD --------------------*/
-.profile-picture-wrapper {
+#about-card-main .profile-picture-wrapper {
 	position: relative;
 	margin: 15px;
 	width: 250px;
@@ -544,6 +544,8 @@ a.project-card-button {
 #LinkedIn-logo {
 	height: 19px;
 	transform: translate(-1px);
+}
+#vCard-logo {
 }
 /*-------------------- END CONTACT CARD --------------------*/
 
