@@ -576,7 +576,7 @@ a.project-card-button {
 #banner::before {
 	content: "";
 	width: calc(100vw + 100px);
-	height: 90px;
+	height: 120px;
 	position: absolute;
 	top: -60px;
 	left: -50px;

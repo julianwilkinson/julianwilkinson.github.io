@@ -4,7 +4,10 @@
 
 /*-------------------- BEGIN PAGE BANNER --------------------*/
 #banner {
-	display: none;
+	height: 50px;
+}
+#banner::before {
+	height: 120px;
 }
 /*-------------------- END PAGE BANNER --------------------*/
 
