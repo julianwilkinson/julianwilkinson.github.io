@@ -523,8 +523,24 @@ a.project-card-button {
 .card#contact-card h1, .card#contact-card h2{
 	color: #000;
 }
+
+.card#contact-card h1 {
+	font-size: 3.5em;
+}
+.card#contact-card h2 {
+	margin-bottom: 40px;
+}
+
+.card#contact-card hr {
+	background-color: #808080;
+	width: 90%;
+	margin: 0;
+}
+
+
+
 #contact-me a{
-	color: gray;
+	color: #808080;
 	text-decoration: underline;
 }
 
@@ -576,7 +592,7 @@ a.project-card-button {
 #banner::before {
 	content: "";
 	width: calc(100vw + 100px);
-	height: 120px;
+	height: 90px;
 	position: absolute;
 	top: -60px;
 	left: -50px;

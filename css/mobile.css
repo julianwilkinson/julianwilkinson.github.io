@@ -11,6 +11,16 @@
 }
 /*-------------------- END PAGE BANNER --------------------*/
 
+/*-------------------- BEGIN PAGE WRAPPER --------------------*/
+.page footer {
+	position: absolute;
+	padding-bottom: 10px;
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+}
+/*-------------------- END PAGE WRAPPER --------------------*/
+
 /*-------------------- BEGIN HOME PAGE --------------------*/
 #home .banner h1 {
 	font-size: 4em;
@@ -54,7 +64,8 @@
 #about-card-main .profile-picture-wrapper {
 	position: relative;
 	margin: 15px;
-	width: 100%;
+	/*width: 100%;*/
+	max-height: 937px;
 	/*height: 50vw;*/
 	/*height: 250px;*/
 	display: flex;
@@ -69,6 +80,6 @@
 
 #profile-picture {
 	width: inherit;
-	height: auto;
+	height: inherit;
 }
 /*-------------------- BEGIN ABOUT CARD --------------------*/
