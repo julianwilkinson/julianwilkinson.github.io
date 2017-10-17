@@ -13,8 +13,12 @@ function cardSwitch(on_screen, off_screen, direction) {
 }
 
 function cardRoute(button) {
+
 	animate(button, function() {
-		carousel_unit = $(button).parents(".carousel-unit")[0];
+
+
+		var carousel_unit = $(button).parents(".carousel-unit")[0];
+		var page = $(carousel_unit).parents(".page")[0];
 		if (button.id.slice(0,4) === "back") {
 			off_screen = $("#about-card-main-carousel-unit")[0];
 			direction = "right";
