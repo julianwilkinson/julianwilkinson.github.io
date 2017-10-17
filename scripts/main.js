@@ -1,4 +1,4 @@
-function cardSwitch(on_screen, off_screen, direction) {
+function cardSwitch(on_screen, off_screen, direction, callback) {
 	if (direction === "right") {
 		on_screen_transform = "translateX(var(--card-offscreen-right))";
 		off_screen_transform = "translateX(0)";
@@ -8,6 +8,10 @@ function cardSwitch(on_screen, off_screen, direction) {
 		off_screen_transform = "translateX(0)";
 	}
 
+	if (callback) {
+		//fire callback once the off_screen card is back on screen
+		$(off_screen).one("transitionend", callback);
+	}
 	on_screen.style.transform = on_screen_transform;
 	off_screen.style.transform = off_screen_transform;
 }
@@ -33,11 +37,14 @@ function cardRoute(button) {
 		}
 
 
-		cardSwitch(carousel_unit, off_screen, direction);
+		cardSwitch(carousel_unit, off_screen, direction, test);
 	});
 	return false;
 }
 
+function test() {
+	console.log("heya");
+}
 
 function animate(obj, action) {
 	$(obj).addClass("animated");
