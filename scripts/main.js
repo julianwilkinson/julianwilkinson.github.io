@@ -70,8 +70,13 @@ function cardPeekOut () {
 }
 
 // On Document Ready
-// $(function() {
-// })
+$(function() {
+	//Fix background for mobile
+	window.onresize = function() {
+    document.body.height = window.innerHeight;
+	}
+	window.onresize();
+})
 
 
 // function no
