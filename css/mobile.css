@@ -102,7 +102,7 @@
 	margin: 10px 0;
 }
 
-#contact-card-mobile .flex-button-wrapper {
+.flex-button-wrapper {
 	display: flex;
 	margin: auto;
 	flex-direction: row;
@@ -113,7 +113,7 @@
 }
 
 
-#contact-card-mobile .flex-button-wrapper a {
+.flex-button-wrapper a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -121,9 +121,10 @@
 	height: 120px;
 	width: 120px;
 	border-radius: 50%;
+	color: #808080;
 }
 
-#contact-card-mobile .flex-button-wrapper a:focus {
+.flex-button-wrapper a:focus {
 	animation: contact-button-press .5s ease-out;
 	outline: 0;
 }
@@ -145,7 +146,7 @@
 	margin-bottom: 10px;
 }
 
-#contact-card-mobile .flex-button {
+.flex-button {
 	border-radius: 50%;
 	display: flex;
 	position: relative;
@@ -153,7 +154,7 @@
 	justify-content: center;
 }
 
-#contact-card-mobile .flex-button label {
+.flex-button label {
 	position: absolute;
 	bottom: 25px;
 	font-size: .75em;
@@ -181,6 +182,8 @@
 	margin-bottom: 20px;
 	/*animation: safer-logo-animation 1.5s ease-in-out infinite;*/
 }
+
+
 /*-------------------- END PROJECT CARDS --------------------*/
 
 
@@ -190,5 +193,9 @@
 /*-------------------- BEGIN PROJECTS --------------------*/
 #presentation {
 	display: none;
+}
+
+#presentation-mobile {
+	display: flex;
 }
 /*-------------------- END PROJECTS --------------------*/
