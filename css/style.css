@@ -38,6 +38,9 @@
 /*-------------------- BEGIN BOILERPLATE --------------------*/
 html {
 	overflow-x: hidden;
+	background: linear-gradient(to bottom, #6699ff 0%,#a8c5ff 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 html, body {
 	width: 100%;
@@ -56,9 +59,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to bottom, #6699ff 0%,#a8c5ff 100%);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	transform: translateZ(-2);
 	font-family: 'Roboto', sans-serif;
 }
@@ -318,11 +318,12 @@ a, a:link, a:visited, a:hover, a:active {
 	transition: transform 1s ease-in-out;
 }
 
-.header-card {
+.card.header-card {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
+
 .header-card h1 {
 }
 

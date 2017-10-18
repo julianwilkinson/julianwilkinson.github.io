@@ -70,13 +70,22 @@ function cardPeekOut () {
 }
 
 // On Document Ready
-$(function() {
-	//Fix background for mobile
-	window.onresize = function() {
-    document.body.height = window.innerHeight;
-	}
-	window.onresize();
-})
+// $(function() {
+// 	// //Fix background for mobile
+// 	// window.onresize = function() {
+// 	// 	document.body.height = window.innerHeight;
+// 	// }
+// 	// window.onresize();
+// 	//
+// 	// function calcVH() {
+// 	// 	$('.jumbotron').innerHeight( $(this).innerHeight() );
+// 	// }
+// 	//
+// 	// calcVH();
+// 	// $(window).on('resize orientationchange', function() {
+// 	// 	calcVH();
+// 	// });
+// })
 
 
 // function no
