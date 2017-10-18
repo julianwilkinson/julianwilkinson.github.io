@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#6699ff">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-device-width: 480px)">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-width: 700px)">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -218,7 +218,7 @@
 <!-- ===== BEGIN CONTACT ME PAGE =====  -->
 <div class="page" id="contact-me">
 	<div class="card-wrapper">
-		<div class="card" id="contact-card">
+		<div class="card" id="contact-card-desktop">
 			<h1>Julian Wilkinson</h1>
 			<h2>Computer Science Student at UC Davis</h2>
 			<hr class="full"/>
@@ -231,11 +231,36 @@
 			<a id="" title="Email" href="mailto:wilkinsonjulian@gmail.com"><i class="material-icons">email</i></a>
 			<a id="LinkedIn-button" title="LinkedIn®" href="https://www.linkedin.com/in/julianbwilkinson/" target="_blank"><img id="LinkedIn-logo" src="media/LinkedIn/In-2C-128px-R.png" /></a>
 			<a id="" title="Resume" href="media/Julian_Wilkinson_Resume.pdf" download><i class="material-icons">description</i></a>
-			<a id="vCard-button" title="vCard" href="media/Julian_Wilkinson_vCard.vcf" type="text/vcard"><i id="vCard-logo" class="material-icons">contact_mail</i></a>
+			<a title="vCard" href="media/Julian_Wilkinson_vCard.vcf" type="text/vcard"><i id="vCard-logo" class="material-icons">contact_mail</i></a>
 		</div>
 	</div>
-	<footer>Made from scratch and with care by Julian Wilkinson. ©Julian Wilkinson 2017</footer>
-</div>
-<!-- ===== END CONTACT ME PAGE =====  -->
+
+	<div class="card-wrapper">
+		<div class="card" id="contact-card-mobile">
+			<h1>Julian Wilkinson</h1>
+			<hr class="full"/>
+			<div class="flex-button-wrapper">
+				<div class="flex-button">
+					<a title="Email" href="mailto:wilkinsonjulian@gmail.com"><i class="material-icons">email</i></a>
+					<label>Email</label>
+				</div>
+				<div class="flex-button">
+					<a title="LinkedIn®" href="https://www.linkedin.com/in/julianbwilkinson/" target="_blank"><img id="LinkedIn-logo-mobile" src="media/LinkedIn/In-2C-128px-R.png" /></a>
+					<label>LinkedIn®</label>
+				</div>
+				<div class="flex-button">
+					<a title="Resume" href="media/Julian_Wilkinson_Resume.pdf" target="_blank"><i class="material-icons">description</i></a>
+					<label>Resume</label>
+				</div>
+				<div class="flex-button">
+					<a title="vCard" href="media/Julian_Wilkinson_vCard.vcf" type="text/vcard"><i class="material-icons">contact_mail</i></a>
+					<label>vCard</label>
+				</div>
+			</div>
+		</div>
+
+		<footer>Made from scratch and with care by Julian Wilkinson. ©Julian Wilkinson 2017</footer>
+	</div>
+	<!-- ===== END CONTACT ME PAGE =====  -->
 </body>
 </html>

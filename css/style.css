@@ -13,7 +13,8 @@
 	--nav-card-x-offset: calc(var(--button-size) / 2);
 
 	/*--CARDS*/
-	--card-width: 800px;
+	--card-width: 700px;
+	--card-real-width: calc(var(--card-width) + 2*var(--card-x-padding));
 	--contacts-card-width: 500px;
 	--card-x-padding: 20px;
 	--card-y-padding: 10px;
@@ -31,6 +32,7 @@
 	--projects-card-real-height: calc(var(--projects-card-height) + (2*var(--card-y-padding)));
 
 }
+
 
 
 /*-------------------- BEGIN BOILERPLATE --------------------*/
@@ -98,7 +100,16 @@ a, a:link, a:visited, a:hover, a:active {
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	margin: 50px 0;
+	transition: min-height 1s ease-in-out;
 }
+.page:nth-child(2) {
+	margin-top: 0;
+}
+.page:last-child {
+	margin-bottom: 0;
+}
+
 .page footer {
 	position: absolute;
 	padding-bottom: 10px;
@@ -141,15 +152,17 @@ a, a:link, a:visited, a:hover, a:active {
 /*-------------------- BEGIN CAROUSEL --------------------*/
 .carousel-wrapper {
 	width: auto;
+	height: auto;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: center;
 	padding: 0;
-	max-width: var(--card-width)
+	max-width: var(--card-width);
 }
 
 .carousel-unit {
-	transition: transform 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .carousel-unit .header {
@@ -166,13 +179,13 @@ a, a:link, a:visited, a:hover, a:active {
 	transform: translate(var(--card-offscreen-right));
 }
 #volunteering-card-carousel-unit {
-	position: absolute;
+	/*position: absolute;*/
 	transform: translate(var(--card-offscreen-right));
 }
 /*Debugging*/
 #about-card-main-carousel-unit {
-	/*position: absolute;
-	transform: translate(var(--card-offscreen-right));*/
+	position: absolute;
+	/*transform: translate(var(--card-offscreen-right));*/
 }
 /*-------------------- END CAROUSEL --------------------*/
 
@@ -290,7 +303,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .card.nav-card:hover + .nav-card-button-wrapper a,
-.card#contact-card:hover + .card-nav-tab-wrapper a{
+.card#contact-card-desktop:hover + .card-nav-tab-wrapper a{
 	transform: translate(var(--button-offset-label-hovered));
 }
 
@@ -574,7 +587,7 @@ a.project-card-button {
 }
 
 
-#contact-card {
+#contact-card-desktop {
 	width: var(--contacts-card-width);
 	height: 250px;
 	display: flex;
@@ -584,20 +597,21 @@ a.project-card-button {
 	position: relative;
 	z-index: 1;
 	transform: translate(var(--card-offset));
+	margin-bottom: 50px;
 }
 
-.card#contact-card h1, .card#contact-card h2{
+.card#contact-card-desktop h1, .card#contact-card-desktop h2{
 	color: #000;
 }
 
-.card#contact-card h1 {
+.card#contact-card-desktop h1 {
 	font-size: 3.5em;
 }
-.card#contact-card h2 {
+.card#contact-card-desktop h2 {
 	margin-bottom: 40px;
 }
 
-.card#contact-card hr {
+.card#contact-card-desktop hr {
 	margin: 0;
 }
 
@@ -627,6 +641,11 @@ a.project-card-button {
 	transform: translate(-1px);
 }
 #vCard-logo {
+}
+
+
+#contact-card-mobile {
+	display: none;
 }
 /*-------------------- END CONTACT CARD --------------------*/
 

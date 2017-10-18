@@ -1,6 +1,9 @@
 :root {
 		--card-width: 92vw;
+		--projects-card-width: 100px;
+		--projects-card-height: 180px;
 }
+
 
 /*-------------------- BEGIN PAGE BANNER --------------------*/
 #banner {
@@ -64,10 +67,7 @@
 #about-card-main .profile-picture-wrapper {
 	position: relative;
 	margin: 15px;
-	/*width: 100%;*/
 	max-height: 937px;
-	/*height: 50vw;*/
-	/*height: 250px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -83,3 +83,83 @@
 	height: inherit;
 }
 /*-------------------- BEGIN ABOUT CARD --------------------*/
+
+
+/*-------------------- BEGIN CONTACT CARD --------------------*/
+
+#contact-card-mobile {
+	display: block;
+	flex-direction: column;
+	margin-bottom: 70px;
+}
+#contact-card-mobile h1 {
+	text-align: center;
+}
+#contact-card-mobile hr {
+	margin: 10px 0;
+}
+
+#contact-card-mobile .flex-button-wrapper {
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+#contact-card-mobile .flex-button-wrapper a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+#contact-card-mobile .flex-button-wrapper a:focus {
+	background-color: #d3d3d3;
+	transition: background-color .5s linear;
+	outline: 0;
+}
+
+.flex-button-wrapper a i {
+	font-size: 3.5em;
+	margin-bottom: 10px;
+}
+
+#contact-card-mobile .flex-button {
+	border-radius: 50%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+#contact-card-mobile .flex-button label {
+	position: absolute;
+	bottom: 25px;
+	font-size: .75em;
+}
+
+#LinkedIn-logo-mobile {
+	width: 2.80em;
+	margin-bottom: 15px;
+}
+
+#contact-me .card-nav-tab-wrapper {
+	display: none;
+}
+#contact-card-desktop {
+	display: none;
+}
+/*-------------------- END CONTACT CARD --------------------*/
+
+/*-------------------- BEGIN PROJECT CARDS --------------------*/
+.project-card-label {
+	font-size: 19px;
+}
+/*-------------------- END PROJECT CARDS --------------------*/

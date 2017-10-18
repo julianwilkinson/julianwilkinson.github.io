@@ -1,4 +1,4 @@
-function cardSwitch(on_screen, off_screen, direction, callback) {
+function cardSwitch(on_screen, off_screen, direction) {
 	if (direction === "right") {
 		on_screen_transform = "translateX(var(--card-offscreen-right))";
 		off_screen_transform = "translateX(0)";
@@ -8,19 +8,12 @@ function cardSwitch(on_screen, off_screen, direction, callback) {
 		off_screen_transform = "translateX(0)";
 	}
 
-	if (callback) {
-		//fire callback once the off_screen card is back on screen
-		$(off_screen).one("transitionend", callback);
-	}
 	on_screen.style.transform = on_screen_transform;
 	off_screen.style.transform = off_screen_transform;
 }
 
 function cardRoute(button) {
-
 	animate(button, function() {
-
-
 		var carousel_unit = $(button).parents(".carousel-unit")[0];
 		var page = $(carousel_unit).parents(".page")[0];
 		if (button.id.slice(0,4) === "back") {
@@ -36,14 +29,21 @@ function cardRoute(button) {
 			direction = "left";
 		}
 
+		cardSwitch(carousel_unit, off_screen, direction);
 
-		cardSwitch(carousel_unit, off_screen, direction, test);
+
+		// $(off_screen).one("transitionend", function() {
+		// 	carousel_unit.style.position = "absolute";
+		// 	off_screen.style.position = "relative";
+		// 	// if (off_screen.id == "about-card-main-carousel-unit") {
+		// 	// 	location.href = "#about";
+		// 	// }
+		// 	// else {
+		// 	// 	location.href = "#" + off_screen.id;
+		// 	// }
+		// });
 	});
 	return false;
-}
-
-function test() {
-	console.log("heya");
 }
 
 function animate(obj, action) {
@@ -70,6 +70,20 @@ function cardPeekOut () {
 }
 
 // On Document Ready
-$(function() {
-	// cardPeek();
-})
+// $(function() {
+// })
+
+
+// function no
+// for each carousel {
+// 	max_height = 0;
+// 	for each carousel unit {
+// 		if(max_height < carouselunit.height ) {
+// 			max_height = carouselunit.height;
+// 	}
+// 	for each carousel unit {
+// 		if (carouselunit.height != max_height) {
+// 			carouselunit.height = max_height;
+// 		}
+// 	}
+// }
