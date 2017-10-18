@@ -26,12 +26,12 @@
 
 /*-------------------- BEGIN HOME PAGE --------------------*/
 #home .banner h1 {
-	font-size: 15vw;
+	font-size: 4em;
 	width: 100%;
 }
 
 #home .banner h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 /*-------------------- END HOME PAGE --------------------*/
 
@@ -176,4 +176,19 @@
 .project-card-label {
 	font-size: 19px;
 }
+#safer .project-card-background .logo {
+	height: 80px;
+	margin-bottom: 20px;
+	/*animation: safer-logo-animation 1.5s ease-in-out infinite;*/
+}
 /*-------------------- END PROJECT CARDS --------------------*/
+
+
+
+
+
+/*-------------------- BEGIN PROJECTS --------------------*/
+#presentation {
+	display: none;
+}
+/*-------------------- END PROJECTS --------------------*/

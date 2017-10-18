@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="theme-color" content="#6699ff">
+	<title>Julian Wilkinson</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-width: 700px)">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -11,13 +11,31 @@
 	rel="stylesheet">
 	<script src="scripts/main.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+	<!-- Begin Favicons -->
+	<meta name="theme-color" content="#6699ff">
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<!-- End Favicons -->
 </head>
 
 <body>
 	<div id="banner">
 		<div class="animation-wrapper">
-			<span>This page is under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though :)</span>
-			<span>This page is under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though :)</span>
+			<span>This page is currently under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though. :)</span>
+			<span>This page is currently under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though. :)</span>
 		</div>
 	</div>
 
@@ -80,80 +98,74 @@
 			</div>
 		</div>
 		<div class="carousel-unit" id="academics-card-carousel-unit">
-			<!-- <div class="header">
-			<h1>Academics</h1>
-		</div> -->
-		<div class="card-wrapper" id="academics-card">
-			<div class="card">
-				<h1>Academics</h1>
-				<hr class="full" />
-				<h2>University of California, Davis <span style="float: right">2016 - Present</span></h2>
-				<h3>Computer Science with a focus in Linguistics </h3>
-				<h3>Planned Graduation: June 2019</h3>
-				<h3>GPA 3.37</h3>
-				<hr class="small"/>
-				<h3>Computer Science Coursework</h3>
-				<ul>
-					<li>Data Structures and Programming</li>
-					<li>Software and Object-Oriented Programming</li>
-					<li>Programming and Problem Solving</li>
-					<li>Computer Architecture</li>
-					<li>Machine Dependent Programming</li>
-					<li>Probability and Statistical Modelling for Computer Science</li>
-				</ul>
-				<h3>Linguistics Coursework</h3>
-				<ul>
-					<li>Introduction to Linguistics</li>
-					<li>Language and Society</li>
-					<li>Linguistic Analysis I: Phonetics, Phonology, and Morphology</li>
-					<li>Linguistic Analysis II: Morphology, Syntax, and Semantics</li>
-				</ul>
+			<div class="card-wrapper">
+				<div class="card header-card">
+					<h1>Academics</h1>
+					<img id="academics-card-animation" src="media/school_icon.svg"/>
+				</div>
+			</div>
+			<div class="card-wrapper" id="academics-card">
+				<div class="card">
+					<h2>University of California, Davis <span style="float: right">2016 - Present</span></h2>
+					<h3>Computer Science with a focus in Linguistics </h3>
+					<h3>Planned Graduation: June 2019</h3>
+					<h3>GPA 3.37</h3>
+					<hr class="medium"/>
+					<h3>Computer Science Coursework</h3>
+					<ul>
+						<li>Data Structures and Programming</li>
+						<li>Software and Object-Oriented Programming</li>
+						<li>Programming and Problem Solving</li>
+						<li>Computer Architecture</li>
+						<li>Machine Dependent Programming</li>
+						<li>Probability and Statistical Modelling for Computer Science</li>
+					</ul>
+					<hr class="small"/>
+					<h3>Linguistics Coursework</h3>
+					<ul>
+						<li>Introduction to Linguistics</li>
+						<li>Language and Society</li>
+						<li>Linguistic Analysis I: Phonetics, Phonology, and Morphology</li>
+						<li>Linguistic Analysis II: Morphology, Syntax, and Semantics</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-wrapper" id="">
+				<div class="card nav-card">
+					<span class="nav-card-label">Back</span>
+				</div>
+				<div class="nav-card-button-wrapper back-button-wrapper">
+					<a title="Back" id="back-volunteering-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+				</div>
 			</div>
 		</div>
-		<div class="card-wrapper" id="">
-			<div class="card nav-card">
-				<span class="nav-card-label">Back</span>
+		<div class="carousel-unit" id="volunteering-card-carousel-unit">
+			<div class="card-wrapper">
+				<div class="card header-card">
+					<h1>Volunteering</h1>
+					<i id="volunteering-card-animation" class="material-icons">favorite</i>
+				</div>
 			</div>
-			<div class="nav-card-button-wrapper back-button-wrapper">
-				<a title="Back" id="back-volunteering-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+			<div class="card-wrapper" id="volunteering-card">
+				<div class="card">
+					<h2>Anonymous HIV Testing<span style="float: right">2016 - Present</span></h2>
+					<hr class="small" />
+					<p>
+						I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
+						explain testing procedure to attendees and schedule their tests. Through this I have gotten a chance to get HIPAA certified and help a worthy cause.
+					</p>
+				</div>
+			</div>
+			<div class="card-wrapper" id="">
+				<div class="card nav-card">
+					<span class="nav-card-label">Back</span>
+				</div>
+				<div class="nav-card-button-wrapper back-button-wrapper">
+					<a title="Back" id="back-volunteering-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="carousel-unit" id="volunteering-card-carousel-unit">
-		<!-- <div class="header">
-		<h1>Volunteering</h1>
-	</div> -->
-	<div class="card-wrapper" id="volunteering-card">
-		<div class="card">
-			<h1>Volunteering</h1>
-			<hr class="full"/>
-			<h2>Anonymous HIV Testing</h2>
-			<p>
-				I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
-				explain testing procedure to attendees and schedule their tests.
-				I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
-				explain testing procedure to attendees and schedule their tests.
-				I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
-				explain testing procedure to attendees and schedule their tests.
-				I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
-				explain testing procedure to attendees and schedule their tests.
-				I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
-				explain testing procedure to attendees and schedule their tests.
-				I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
-				explain testing procedure to attendees and schedule their tests.  
-			</p>
-		</div>
-	</div>
-	<div class="card-wrapper" id="">
-		<div class="card nav-card">
-			<span class="nav-card-label">Back</span>
-		</div>
-		<div class="nav-card-button-wrapper back-button-wrapper">
-			<a title="Back" id="back-volunteering-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
-		</div>
-	</div>
-</div>
-</div>
 </div>
 <!-- ===== END ABOUT PAGE =====  -->
 

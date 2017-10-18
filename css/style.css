@@ -174,17 +174,47 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 
+#academics-card-animation {
+	width: 4.5em;
+	margin: 10px 0;
+}
+
+#volunteering-card-animation {
+	font-size: 4.5em;
+	margin: 10px 0;
+	color: #FF1414;
+	animation: heart-beat-animation 1s linear infinite;
+}
+
+@keyframes heart-beat-animation {
+		0% {
+			transform: scale(1);
+		}
+		20% {
+			transform: scale(1.2);
+		}
+		40% {
+			transform: scale(1.1);
+		}
+		50% {
+			transform: scale(1.3);
+		}
+		70%, 100% {
+			transform: scale(1);
+		}
+}
+
+/*Debugging*/
 #academics-card-carousel-unit {
 	position: absolute;
 	transform: translate(var(--card-offscreen-right));
 }
 #volunteering-card-carousel-unit {
-	/*position: absolute;*/
+	position: absolute;
 	transform: translate(var(--card-offscreen-right));
 }
-/*Debugging*/
 #about-card-main-carousel-unit {
-	position: absolute;
+	/*position: absolute;*/
 	/*transform: translate(var(--card-offscreen-right));*/
 }
 /*-------------------- END CAROUSEL --------------------*/
@@ -248,8 +278,14 @@ a, a:link, a:visited, a:hover, a:active {
 	margin-top: 10px;
 }
 
+.card hr.medium {
+	width: 66%;
+	margin: 10px 0;
+	opacity: .2;
+}
+
 .card hr.small {
-	width: 70%;
+	width: 33%;
 	margin: 10px 0;
 	opacity: .2;
 }
@@ -283,10 +319,11 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .header-card {
-	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .header-card h1 {
-	margin-bottom: 5px;
 }
 
 
@@ -364,7 +401,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .nav-card-button-wrapper #volunteering-button.animated i {
-	animation: volunteering-button-heart-animation 1s;
+	/*animation: volunteering-button-heart-animation 1s;*/
 }
 @keyframes volunteering-button-heart-animation {
 	0% {
