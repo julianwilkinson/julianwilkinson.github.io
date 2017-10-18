@@ -77,7 +77,7 @@ body {
 }
 .main-menu a {
 	padding: 10px 20px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -133,7 +133,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 #home .banner h1 {
-	font-size: 8em;
+	font-size: 7.7em;
 	font-family: 'Lobster', cursive;
 }
 

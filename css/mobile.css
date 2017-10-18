@@ -26,11 +26,12 @@
 
 /*-------------------- BEGIN HOME PAGE --------------------*/
 #home .banner h1 {
-	font-size: 4em;
+	font-size: 15vw;
+	width: 100%;
 }
 
 #home .banner h2 {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 /*-------------------- END HOME PAGE --------------------*/
 
@@ -45,8 +46,10 @@
 }
 .main-menu a {
 	padding: 10px 20px;
-	font-size: 1em;
-	font-family: 'Raleway', sans-serif;
+	margin: 10px;
+	font-size: 1.3em;
+	width: 3.5em;
+	text-align: center;
 }
 
 .main-menu a:hover {
@@ -121,9 +124,20 @@
 }
 
 #contact-card-mobile .flex-button-wrapper a:focus {
-	background-color: #d3d3d3;
-	transition: background-color .5s linear;
+	animation: contact-button-press .5s ease-out;
 	outline: 0;
+}
+
+@keyframes contact-button-press {
+	0% {
+		background-color: #fff;
+	}
+	50% {
+		background-color: #d3d3d3;
+	}
+	100% {
+		background-color: #fff;
+	}
 }
 
 .flex-button-wrapper a i {
