@@ -122,11 +122,11 @@
 	width: 120px;
 	border-radius: 50%;
 	color: #808080;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .flex-button-wrapper a:focus {
 	animation: contact-button-press .5s ease-out;
-	outline: 0;
 }
 
 @keyframes contact-button-press {
