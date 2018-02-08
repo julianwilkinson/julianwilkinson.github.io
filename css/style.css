@@ -383,7 +383,7 @@ a, a:link, a:visited, a:hover, a:active {
 .nav-card-label {
 	font-size: 30px;
 }
-.card.nav-card:active .nav-card-button-wrapper a:hover, .card-nav-tab-wrapper a:hover {
+.nav-card-button-wrapper a:hover, .card-nav-tab-wrapper a:hover {
 	transform: translate(var(--button-offset-label-hovered));
 	transition: transform .2s ease-in;
 	animation: tab-hover-animation .50s;
