@@ -69,12 +69,12 @@
 					</div>
 					<h1>About Me</h1>
 					<p>
-						Hi! I'm Julian. I'm currently a 3rd Year Computer Science major at UC Davis. This website is me trying my hand at front end development from scratch, no templates or libraries (aside from jQuery and some icons), just pure javascript and CSS.
-						As someone who started front end developing less than a year ago, I've come to realize that front end development demonstrates the best, immediately tangible part of Software Engineering: taking an idea and making it real with just a few lines of code.
-						Most of my projects on this site deal with me doing extensive front end development, however, I also have experience with developing the back end of applications and managing projects. The projects I have listed under the projects section of this website show this.
+						Hi! I'm Julian. I'm currently a 3rd Year Computer Science major at UC Davis. This website is me trying my hand at front end development from scratch; I have not used any templates or libraries (aside from jQuery and some icons), and am mainly using pure javascript and CSS.
+						As someone who started learning front end development a little over a year ago, I've realized that front end development demonstrates the best, immediately tangible part of Software Engineering: taking an idea and making it real in just a few lines of code.
+						Most of my projects on this site deal with my work as a new front end developer, however, I also have experience with developing the back end of applications and managing projects. The projects I have listed under the projects section of this website show this.
 						<hr>
 						This website is my attempt at conveying who I am, as both a developer and an individual. It is my hope that
-						it can help give you an idea of who I am, what I can do, and what I care about, with just a few lines of code.
+						it can help give you an idea of who I am, what I can do, and what I care about, in just a few lines of code.
 					</p>
 				</div>
 			</div>
@@ -88,6 +88,15 @@
 				</div>
 			</div>
 
+			<div class="card-wrapper" id="employment-button-card">
+				<div class="card nav-card">
+					<span class="nav-card-label">Employment</span>
+				</div>
+				<div class="nav-card-button-wrapper">
+					<a  onclick="cardRoute(this)" title="Employment" id="employment-button"><i class="material-icons">work</i></a>
+				</div>
+			</div>
+
 			<div class="card-wrapper" id="volunteering-button-card">
 				<div class="card nav-card">
 					<span class="nav-card-label" >Volunteering</span>
@@ -97,7 +106,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="carousel-unit" id="academics-card-carousel-unit">
+		<div class="carousel-unit invisible" id="academics-card-carousel-unit">
 			<div class="card-wrapper">
 				<div class="card header-card">
 					<h1>Academics</h1>
@@ -107,26 +116,31 @@
 			<div class="card-wrapper" id="academics-card">
 				<div class="card">
 					<h2>University of California, Davis <span style="float: right">2016 - Present</span></h2>
-					<h3>Computer Science with a focus in Linguistics </h3>
+					<h3>Computer Science Major with a Minor in Linguistics </h3>
 					<h3>Planned Graduation: June 2019</h3>
-					<h3>GPA 3.37</h3>
+					<h3>GPA 3.48</h3>
 					<hr class="medium"/>
 					<h3>Computer Science Coursework</h3>
 					<ul>
+						<li>Algorithm Design and Analysis</li>
 						<li>Data Structures and Programming</li>
-						<li>Software and Object-Oriented Programming</li>
+						<!-- <li>Software and Object-Oriented Programming</li> -->
 						<li>Programming and Problem Solving</li>
-						<li>Computer Architecture</li>
-						<li>Machine Dependent Programming</li>
+						<li>Advanced Programming Languages</li>
 						<li>Probability and Statistical Modelling for Computer Science</li>
+						<li>Computer Architecture</li>
+						<!-- <li>Machine Dependent Programming</li> -->
 					</ul>
 					<hr class="small"/>
 					<h3>Linguistics Coursework</h3>
 					<ul>
-						<li>Introduction to Linguistics</li>
-						<li>Language and Society</li>
+						<li>Corpus Linguistics</li>
+						<li>Computational Linguistics</li>
+						<li>Morphology</li>
 						<li>Linguistic Analysis I: Phonetics, Phonology, and Morphology</li>
 						<li>Linguistic Analysis II: Morphology, Syntax, and Semantics</li>
+						<li>Multilingualism</li>
+						<!-- <li>Language and Society</li> -->
 					</ul>
 				</div>
 			</div>
@@ -135,11 +149,33 @@
 					<span class="nav-card-label">Back</span>
 				</div>
 				<div class="nav-card-button-wrapper back-button-wrapper">
-					<a title="Back" id="back-volunteering-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+					<a title="Back" id="back-academics-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
 				</div>
 			</div>
 		</div>
-		<div class="carousel-unit" id="volunteering-card-carousel-unit">
+		<div class="carousel-unit invisible" id="employment-card-carousel-unit">
+			<div class="card-wrapper">
+				<div class="card header-card">
+					<h1>Employment</h1>
+				</div>
+			</div>
+			<div class="card-wrapper" id="employment`-card">
+				<div class="card">
+					<h2>Student IT Assistant</h2>
+					<h3>UC Davis Internship and Career Center</h3>
+					<h4>September 2016 - Present</h4>
+				</div>
+			</div>
+			<div class="card-wrapper" id="">
+				<div class="card nav-card">
+					<span class="nav-card-label">Back</span>
+				</div>
+				<div class="nav-card-button-wrapper back-button-wrapper">
+					<a title="Back" id="back-employment-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-unit invisible" id="volunteering-card-carousel-unit">
 			<div class="card-wrapper">
 				<div class="card header-card">
 					<h1>Volunteering</h1>
@@ -195,7 +231,27 @@
 				</div>
 			</div>
 
-			<div class="card project-card" id="rejected-job-postings" disabled>
+			<div class="card project-card" id="fraudulent-job-postings">
+				<span class="project-card-label">Fraudulent Jobs Info.</span>
+				<div class="project-card-background">
+					<img class="logo" src="media/projects/icc/logo.svg">
+				</div>
+				<div class="project-card-button-div">
+					<a href="https://icc.ucdavis.edu/find/scams.htm" target="_blank" class="project-card-button">LEARN MORE</a>
+				</div>
+			</div>
+
+			<div class="card project-card" id="diaphoneme-swap">
+				<span class="project-card-label">Diaphoneme Swap</span>
+				<div class="project-card-background">
+					<img class="logo" src="media/projects/diaphoneme_swap/swi-prolog.png">
+				</div>
+				<div class="project-card-button-div">
+					<a href="https://github.com/julianwilkinson/Diaphoneme-Swap" target="_blank" class="project-card-button">LEARN MORE</a>
+				</div>
+			</div>
+
+			<!-- <div class="card project-card" id="rejected-job-postings" disabled>
 				<span class="project-card-label">Rejected Job Postings Mgr.</span>
 				<div class="project-card-background">
 					<img class="logo" src="media/projects/icc/logo.svg">
@@ -203,19 +259,10 @@
 				<div class="project-card-button-div">
 					<a class="project-card-button">LEARN MORE</a>
 				</div>
-			</div>
+			</div> -->
 
-			<div class="card project-card" id="fraudulent-job-postings" disabled>
-				<span class="project-card-label">Fraudulent Jobs Info.</span>
-				<div class="project-card-background">
-					<img class="logo" src="media/projects/icc/logo.svg">
-				</div>
-				<div class="project-card-button-div">
-					<a class="project-card-button">LEARN MORE</a>
-				</div>
-			</div>
 		</div>
-		<div class="carousel-unit" id="academics-card-carousel-unit">
+		<div class="carousel-unit invisible" id="academics-card-carousel-unit">
 			<div class="card-wrapper" id="academics-card">
 				<div class="card">
 					<h1>HIV Testing Assistant</h1>

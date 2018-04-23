@@ -15,7 +15,7 @@
 	/*--CARDS*/
 	--card-width: 700px;
 	--card-real-width: calc(var(--card-width) + 2*var(--card-x-padding));
-	--contacts-card-width: 500px;
+	--contacts-card-width: 440px;
 	--card-x-padding: 20px;
 	--card-y-padding: 10px;
 	--card-blur: 20px;
@@ -53,6 +53,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
+.invisible {
+	opacity: 0;
+}
 
 /*-------------------- END BOILERPLATE --------------------*/
 
@@ -163,7 +166,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .carousel-unit {
-	transition: all 1s ease-in-out;
+	transition: transform 1s ease-in-out;
 }
 
 .carousel-unit .header {
@@ -205,18 +208,18 @@ a, a:link, a:visited, a:hover, a:active {
 		}
 }
 
-/*Debugging*/
-#academics-card-carousel-unit {
+#academics-card-carousel-unit, #volunteering-card-carousel-unit, #employment-card-carousel-unit {
 	position: absolute;
 	transform: translate(var(--card-offscreen-right));
 }
-#volunteering-card-carousel-unit {
-	position: absolute;
-	transform: translate(var(--card-offscreen-right));
+
+
+.offscreen-left {
+	transform: translate(var(--card-offscreen-left));
 }
-#about-card-main-carousel-unit {
-	/*position: absolute;*/
-	/*transform: translate(var(--card-offscreen-right));*/
+
+.offscreen-right {
+	transform: translate(var(--card-offscreen-right));
 }
 /*-------------------- END CAROUSEL --------------------*/
 
@@ -425,6 +428,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 /*-------------------- BEGIN PROJECT CARDS --------------------*/
 .carousel-unit.projects {
+	margin-top: 25px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -515,6 +519,14 @@ a, a:link, a:visited, a:hover, a:active {
 	background-color: #002855;
 }
 
+#diaphoneme-swap .logo {
+	width: 50%;
+}
+
+#diaphoneme-swap .project-card-background{
+	background-color: #ff8f00;
+}
+
 
 
 .project-card-label {
@@ -546,14 +558,14 @@ a, a:link, a:visited, a:hover, a:active {
 	top: -25px;
 	bottom: 0;
 	box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
-	filter: blur(75px);
+	/* filter: blur(75px); */
 	z-index: -1;
 	width: calc(var(--projects-card-real-width) + 100px);
 	height: 100px;
 }
 a.project-card-button {
 	width: var(--projects-card-real-width);
-	color: #D3D3D3;
+	color: #fff;
 	height: 40px;
 	position: absolute;
 	left: 0;
@@ -576,7 +588,7 @@ a.project-card-button {
 	transform: translateY(-1px);
 }
 .project-card-button-div:active::before {
-	filter: brightness(.75);
+	/* filter: brightness(.75); */
 }
 .project-card-button-div:active a.project-card-button {
 	color: #fff;
@@ -720,7 +732,7 @@ a.project-card-button {
 	position: absolute;
 	top: -60px;
 	left: -50px;
-	filter:blur(100px);
+	/* filter:blur(100px); */
 	background-color: #DCDCDC	;
 	overflow: hidden;
 	z-index: -1;

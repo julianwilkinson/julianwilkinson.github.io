@@ -1,16 +1,32 @@
 function cardSwitch(on_screen, off_screen, direction) {
 	if (direction === "right") {
+		$(off_screen).removeClass("invisible");
 		on_screen_transform = "translateX(var(--card-offscreen-right))";
 		off_screen_transform = "translateX(0)";
+
+		$(off_screen).one("transitionend",
+		function() {
+			$(on_screen).addClass("invisible")
+		});
 	}
 	else if (direction === "left") {
+		$(off_screen).removeClass("invisible");
 		on_screen_transform = "translateX(var(--card-offscreen-left))";
 		off_screen_transform = "translateX(0)";
+
+		$(off_screen).one("transitionend",
+		function() {
+			$(on_screen).addClass("invisible")
+		});
 	}
 
 	on_screen.style.transform = on_screen_transform;
 	off_screen.style.transform = off_screen_transform;
 }
+
+$(document).ready(function() {
+
+});
 
 function cardRoute(button) {
 	animate(button, function() {
@@ -26,6 +42,10 @@ function cardRoute(button) {
 		}
 		else if (button.id === "volunteering-button") {
 			off_screen = $("#volunteering-card-carousel-unit")[0];
+			direction = "left";
+		}
+		else if (button.id === "employment-button") {
+			off_screen = $("#employment-card-carousel-unit")[0];
 			direction = "left";
 		}
 
