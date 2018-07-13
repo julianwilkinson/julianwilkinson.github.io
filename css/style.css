@@ -116,9 +116,12 @@ a, a:link, a:visited, a:hover, a:active {
 
 .page footer {
 	position: absolute;
-	padding-bottom: 10px;
+	padding: 5px 0px;
 	bottom: 0;
 	color: #fff;
+	text-align: center;
+	background-color: rgba(255,255,255,.15);
+	width: 100%;
 }
 /*-------------------- END PAGE WRAPPER --------------------*/
 
