@@ -38,17 +38,17 @@
 /*-------------------- BEGIN BOILERPLATE --------------------*/
 html {
 	overflow-x: hidden;
-/*	background: linear-gradient(to bottom, #6699ff 0%,#a8c5ff 100%);*/
     background-image: url(/media/background.svg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-size: cover
 }
+
 html, body {
 	width: 100%;
 	height: 130%;
-	/*110% so background will fill all of screen on mobile browsers*/
 }
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
@@ -66,7 +66,7 @@ body {
 	margin: 0;
 	padding: 0;
 	transform: translateZ(-2);
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 }
 /*-------------------- END BACKGROUND --------------------*/
 
@@ -83,7 +83,7 @@ body {
 }
 .main-menu a {
 	padding: 10px 20px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -143,12 +143,12 @@ a, a:link, a:visited, a:hover, a:active {
 
 #home .banner h1 {
 	font-size: 7.7em;
-	font-family: 'Lobster', cursive;
+	font-family: 'Fugaz One', cursive;
 }
 
 #home .banner h2 {
 	font-size: 2em;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Fugaz One', sans-serif;
 }
 /*-------------------- END HOME PAGE --------------------*/
 
@@ -175,7 +175,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .carousel-unit .header {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 #about.carousel-unit .card-wrapper:not(:first-of-type) {
@@ -229,7 +229,7 @@ a, a:link, a:visited, a:hover, a:active {
 /*-------------------- END CAROUSEL --------------------*/
 
 .page > h1 {
-	font-family: 'Lobster', cursive;
+	font-family: 'Fugaz One', cursive;
 	color: #fff;
 	/*text-shadow: 0 1px rgba(0,0,0,0.19);*/
 	/*transform: translate(50px, 0);*/
