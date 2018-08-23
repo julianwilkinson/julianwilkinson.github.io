@@ -1,10 +1,10 @@
 function cardSwitch(on_screen, off_screen, direction) {
 	if (direction === "right") {
-		$(off_screen).removeClass("hidden");
+		$(off_screen).removeClass("invisible");
 		on_screen_transform = "translateX(var(--card-offscreen-right))";
 	}
 	else if (direction === "left") {
-		$(off_screen).removeClass("hidden");
+		$(off_screen).removeClass("invisible");
 		on_screen_transform = "translateX(var(--card-offscreen-left))";
 	}
 	off_screen_transform = "translateX(0)";
@@ -13,7 +13,7 @@ function cardSwitch(on_screen, off_screen, direction) {
 	off_screen.style.transform = off_screen_transform;
 	$(off_screen).one("transitionend",
 	function() {
-		$(on_screen).addClass("hidden")
+		$(on_screen).addClass("invisible")
 	});
 }
 
