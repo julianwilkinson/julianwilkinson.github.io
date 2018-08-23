@@ -2,26 +2,19 @@ function cardSwitch(on_screen, off_screen, direction) {
 	if (direction === "right") {
 		$(off_screen).removeClass("hidden");
 		on_screen_transform = "translateX(var(--card-offscreen-right))";
-		off_screen_transform = "translateX(0)";
-
-		$(off_screen).one("transitionend",
-		function() {
-			$(on_screen).addClass("hidden")
-		});
 	}
 	else if (direction === "left") {
 		$(off_screen).removeClass("hidden");
 		on_screen_transform = "translateX(var(--card-offscreen-left))";
-		off_screen_transform = "translateX(0)";
-
-		$(off_screen).one("transitionend",
-		function() {
-			$(on_screen).addClass("hidden")
-		});
 	}
+	off_screen_transform = "translateX(0)";
 
 	on_screen.style.transform = on_screen_transform;
 	off_screen.style.transform = off_screen_transform;
+	$(off_screen).one("transitionend",
+	function() {
+		$(on_screen).addClass("hidden")
+	});
 }
 
 $(document).ready(function() {

@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 0;
 }
 
+.hidden {
+	display: none;
+}
+
 /*-------------------- END BOILERPLATE --------------------*/
 
 /*-------------------- BEGIN BACKGROUND --------------------*/
@@ -754,7 +758,7 @@ a.project-card-button {
 	position: absolute;
 	top: -60px;
 	left: -50px;
-	 filter:blur(100px); 
+	 filter:blur(100px);
 	background-color: #DCDCDC	;
 	overflow: hidden;
 	z-index: -1;
