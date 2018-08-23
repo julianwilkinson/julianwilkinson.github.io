@@ -66,7 +66,7 @@ body {
 	margin: 0;
 	padding: 0;
 	transform: translateZ(-2);
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 /*-------------------- END BACKGROUND --------------------*/
 
@@ -83,7 +83,7 @@ body {
 }
 .main-menu a {
 	padding: 10px 20px;
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -148,7 +148,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 #home .banner h2 {
 	font-size: 2em;
-	font-family: 'Fugaz One', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 /*-------------------- END HOME PAGE --------------------*/
 
@@ -175,7 +175,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .carousel-unit .header {
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 #about.carousel-unit .card-wrapper:not(:first-of-type) {
