@@ -39,7 +39,7 @@
 html {
 	overflow-x: hidden;
 /*	background: linear-gradient(to bottom, #6699ff 0%,#a8c5ff 100%);*/
-    background-image: url(/media/background.svg);
+    background-image: url(../media/background.svg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-size: cover
@@ -152,11 +152,11 @@ a, a:link, a:visited, a:hover, a:active {
 }
 /*-------------------- END HOME PAGE --------------------*/
 
-/*-------------------- BEGIN ABOUT PAGE --------------------*/
-#about {
+/*-------------------- BEGIN PAGE --------------------*/
+.page {
 	padding: 10px;
 }
-/*-------------------- END ABOUT PAGE --------------------*/
+/*-------------------- END PAGE --------------------*/
 
 /*-------------------- BEGIN CAROUSEL --------------------*/
 .carousel-wrapper {
@@ -191,7 +191,7 @@ a, a:link, a:visited, a:hover, a:active {
 #volunteering-card-animation {
 	font-size: 4.5em;
 	margin: 10px 0;
-	color: #FF1414;
+	color: #ffb7a8;
 	animation: heart-beat-animation 1s linear infinite;
 }
 
@@ -258,6 +258,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 .card h1{
 	padding: 0;
+    font-size: 2.5em;
 }
 
 .card a{
@@ -267,9 +268,11 @@ a, a:link, a:visited, a:hover, a:active {
 	padding: 0;
 }
 
-.card p:first-of-type::first-letter {
-	font-size: 1.5em;
-	font-weight: bold;
+.card p {
+    font-size: 1.25em;
+}
+
+.card a {
 }
 
 .card hr {
@@ -277,7 +280,7 @@ a, a:link, a:visited, a:hover, a:active {
 	width: 100%;
 	border-color: #000;
 	border-bottom: 1px;
-	opacity: .2;
+	opacity: .15;
 	border-style: solid;
 	margin: 10px 0;
 }
@@ -308,7 +311,7 @@ a, a:link, a:visited, a:hover, a:active {
 .card ul li {
 	margin: .5em 0;
 }
-.card li::before {
+.card ul li::before {
 	content: "—";
 	padding: 0 1em;
 	padding-right: .5em;
@@ -347,6 +350,7 @@ a, a:link, a:visited, a:hover, a:active {
 	align-items: center;
 	justify-content: flex-start;
 	transform: translate(var(--nav-card-x-offset));
+    height: 50px;
 }
 
 
@@ -389,7 +393,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 
 .nav-card-label {
-	font-size: 30px;
+	font-size: 36px;
 }
 .nav-card-button-wrapper a:hover, .card-nav-tab-wrapper a:hover {
 	transform: translate(var(--button-offset-label-hovered));
@@ -440,7 +444,7 @@ a, a:link, a:visited, a:hover, a:active {
 	justify-content: space-around;
 	align-items: center;
 	align-content: space-around;
-	height: 500px;
+	height: 540px;
 	width: var(--card-width);
 }
 
@@ -463,7 +467,14 @@ a, a:link, a:visited, a:hover, a:active {
 
 .project-card[disabled] {
 	opacity: .5;
-	pointer-events: none;
+}
+.project-card[disabled]:hover {
+    box-shadow: 0 10px var(--card-blur) rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transition: all .25s ease-out;
+	transform: none;
+}
+.project-card[disabled] a {
+    pointer-events: none
 }
 
 
@@ -515,7 +526,7 @@ a, a:link, a:visited, a:hover, a:active {
 	}
 }
 
-#rejected-job-postings .logo, #fraudulent-job-postings .logo {
+.project-card .logo {
 	width: 80%;
 }
 
@@ -532,7 +543,9 @@ a, a:link, a:visited, a:hover, a:active {
 	background-color: #ff8f00;
 }
 
-
+#wyd .project-card-background {
+    background-color: #07beb8;
+}
 
 .project-card-label {
 	font-size: 25px;
@@ -597,6 +610,10 @@ a.project-card-button {
 }
 .project-card-button-div:active a.project-card-button {
 	color: #fff;
+}
+
+.project-card .invisible {
+    pointer-events: none;
 }
 
 
@@ -737,7 +754,7 @@ a.project-card-button {
 	position: absolute;
 	top: -60px;
 	left: -50px;
-	/* filter:blur(100px); */
+	 filter:blur(100px); 
 	background-color: #DCDCDC	;
 	overflow: hidden;
 	z-index: -1;

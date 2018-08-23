@@ -64,17 +64,13 @@
 			</div> -->
 			<div class="card-wrapper" id="about-card-main">
 				<div class="card">
-					<div class="profile-picture-wrapper">
+					<h1>About Me</h1>
+                    <hr class="full">
+                    <div class="profile-picture-wrapper">
 						<img src="media/me.jpg" id="profile-picture"/>
 					</div>
-					<h1>About Me</h1>
 					<p>
-						Hi! I'm Julian. I'm currently a 4th Year Computer Science major at UC Davis. This website is me trying my hand at front end development from scratch; I have not used any templates or libraries (aside from jQuery and some icons) and am mainly using pure javascript and CSS.
-						As someone who started learning front end development a little over a year ago, I've realized that front end development demonstrates the best, immediately tangible part of Software Engineering: taking an idea and making it real in just a few lines of code.
-						Most of my projects on this site deal with my work as a new front end developer, however, I also have experience with developing the back end of applications and managing projects. The projects I have listed under the projects section of this website show this.
-						<hr>
-						This website is my attempt at conveying who I am, as both a developer and an individual. It is my hope that
-						it can help give you an idea of who I am, what I can do, and what I care about, in just a few lines of code.
+						Hi! I'm Julian. I'm currently a 4th Year Computer Science major at UC Davis. My passion for Computer Science lies in its ability to help make the lives of others better. There are many unexplored applications of computer science,  both as a standalone applications in addition to its use as a tool to augment and further other fields like Linguistics or Epidemiology and it is my goal to explore those applications. 
 					</p>
 				</div>
 			</div>
@@ -88,6 +84,7 @@
 				</div>
 			</div>
 
+<!--
 			<div class="card-wrapper" id="employment-button-card">
 				<div class="card nav-card">
 					<span class="nav-card-label">Employment</span>
@@ -96,6 +93,7 @@
 					<a  onclick="cardRoute(this)" title="Employment" id="employment-button"><i class="material-icons">work</i></a>
 				</div>
 			</div>
+-->
 
 			<div class="card-wrapper" id="volunteering-button-card">
 				<div class="card nav-card">
@@ -120,19 +118,17 @@
 					<h3>Planned Graduation: March 2019</h3>
 					<h3>GPA 3.51</h3>
 					<hr class="medium"/>
-					<h3>Computer Science Coursework</h3>
+					<h3>Relevant Computer Science Coursework</h3>
 					<ul>
 						<li>Algorithm Design and Analysis</li>
 						<li>Data Structures and Programming</li>
-						<!-- <li>Software and Object-Oriented Programming</li> -->
 						<li>Programming and Problem Solving</li>
 						<li>Advanced Programming Languages</li>
 						<li>Probability and Statistical Modelling for Computer Science</li>
 						<li>Computer Architecture</li>
-						<!-- <li>Machine Dependent Programming</li> -->
 					</ul>
 					<hr class="small"/>
-					<h3>Linguistics Coursework</h3>
+					<h3>Relevant Linguistics Coursework</h3>
 					<ul>
 						<li>Corpus Linguistics</li>
 						<li>Computational Linguistics</li>
@@ -140,8 +136,8 @@
 						<li>Linguistic Analysis I: Phonetics, Phonology, and Morphology</li>
 						<li>Linguistic Analysis II: Morphology, Syntax, and Semantics</li>
 						<li>Multilingualism</li>
-						<!-- <li>Language and Society</li> -->
 					</ul>
+                    <p>Please <a href="mailto:wilkinsonjulian@gmail.com">contact me</a> if you'd like to know more about all the Computer Science and or Linguistics courses I've taken.</p>
 				</div>
 			</div>
 			<div class="card-wrapper" id="">
@@ -153,6 +149,7 @@
 				</div>
 			</div>
 		</div>
+<!--
 		<div class="carousel-unit invisible" id="employment-card-carousel-unit">
 			<div class="card-wrapper">
 				<div class="card header-card">
@@ -175,6 +172,7 @@
 				</div>
 			</div>
 		</div>
+-->
 		<div class="carousel-unit invisible" id="volunteering-card-carousel-unit">
 			<div class="card-wrapper">
 				<div class="card header-card">
@@ -212,8 +210,9 @@
 		<div class="card-wrapper" id="project-header-card">
 			<div class="card">
 				<h1>Projects</h1>
-				<p>
-					These are all my projects, current and past. Please <a title="wilkinsonjulian@gmail.com" href="#contact-me">let me know</a> if you have any questions or comments!
+				<hr class="full">
+                <p>
+					These are my most recent project. Please <a title="wilkinsonjulian@gmail.com" href="#contact-me">let me know</a> if you have any questions or comments.
 				</p>
 			</div>
 		</div>
@@ -240,18 +239,28 @@
 					<a href="https://icc.ucdavis.edu/find/scams.htm" target="_blank" class="project-card-button">LEARN MORE</a>
 				</div>
 			</div>
+            
+            <div class="card project-card" id="wyd">
+				<span class="project-card-label"><i>Wyd?</i></span>
+				<div class="project-card-background">
+					<img class="logo" src="media/projects/wyd/logo.png">
+				</div>
+				<div class="project-card-button-div">
+					<a href="media/projects/wyd/wyd.pdf" target="_blank" class="project-card-button">LEARN MORE</a>
+				</div>
+			</div>
 
-			<!-- <div class="card project-card" id="diaphoneme-swap">
+			 <div class="card project-card" id="diaphoneme-swap">
 				<span class="project-card-label">Diaphoneme Swap</span>
 				<div class="project-card-background">
 					<img class="logo" src="media/projects/diaphoneme_swap/swi-prolog.png">
 				</div>
 				<div class="project-card-button-div">
-					<a href="https://github.com/julianwilkinson/Diaphoneme-Swap" target="_blank" class="project-card-button">LEARN MORE</a>
+					<a href="projects/diaphoneme_swap.html" target="_blank" class="project-card-button">LEARN MORE</a>
 				</div>
-			</div> -->
+			</div> 
 
-			<!-- <div class="card project-card" id="rejected-job-postings" disabled>
+			 <div class="card project-card" id="rejected-job-postings" title="Coming soon." disabled>
 				<span class="project-card-label">Rejected Job Postings Mgr.</span>
 				<div class="project-card-background">
 					<img class="logo" src="media/projects/icc/logo.svg">
@@ -259,7 +268,10 @@
 				<div class="project-card-button-div">
 					<a class="project-card-button">LEARN MORE</a>
 				</div>
-			</div> -->
+			</div> 
+            
+            <div class="card project-card invisible">
+			</div> 
 
 		</div>
 		<div class="carousel-unit invisible" id="academics-card-carousel-unit">

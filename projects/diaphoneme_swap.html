@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Julian Wilkinson - Diaphoneme Swap</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/projects.css">
+	<link rel="stylesheet" type="text/css" href="../css/mobile.css" media="only screen and (max-width: 700px)">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+	<script src="../scripts/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    
+    <!-- Tau Prolog  -->
+    <script src="../media/projects/diaphoneme_swap/tau-prolog.js"></script>
+
+	<!-- Begin Favicons -->
+	<meta name="theme-color" content="#6699ff">
+	<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="manifest" href="../manifest.json">
+	<!-- End Favicons -->
+
+</head>
+
+<body>
+	<div id="banner">
+		<div class="animation-wrapper">
+			<span>This page is currently under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>.</span>
+			<span>This page is currently under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>.</span>
+		</div>
+	</div>
+
+	<!-- ===== BEGIN PROJECT CARD =====  -->
+	<div class="page" id="">
+		<div class="carousel-wrapper">
+			<div class="carousel-unit" id="">
+				<div class="card-wrapper" id="academics-button-card">
+					<div class="card">
+						<h1>Diaphoneme Swap</h1>
+						<hr />
+						<p>
+							Diaphoneme Swap was created based off of the work of phonetician John C. Wells. Dr. Wells has given me permission to make this work public.
+                            <h3>The following resources are available:</h3>
+                            <ul>
+                        <li><a href="https://www.phon.ucl.ac.uk/home/wells/" target="_blank">Dr. Well's Website</a></li>
+                        <li><a href="https://github.com/julianwilkinson/Diaphoneme-Swap" target="_blank">Project Github Page</a></li>
+                        <li><a href="../media/projects/diaphoneme_swap/The_Diaphonemes_of_English_Vowels__A_Prolog_Implementation_Wilkinson.pdf">Project Write-Up</a></li>
+                        </ul>
+                        </p>
+
+					</div>
+				</div>
+				<div class="card-wrapper">
+					<div class="card">
+						<h1>Demo</h1>
+						<p>The original project is written in SWI-Prolog. In order to demo this in browser three things had to be done.</p>
+                        <ol>
+                            <li>Refactor the Prolog code
+                                <ul>
+                                    <li>SWI-Prolog contained operators not compatible with the ISO Compliant transpiler used for this demo.</li>
+                                </ul>
+                            </li>
+                            <li>Transpile the Prolog code into Javascript
+                                <ul>
+                                    <li>Prolog code cannot run natively in a browser.</li>
+                                </ul>
+                            </li>
+                            <li>Create an interface for the transpiled Prolog "backend".
+                                <ul>
+                                    <li><b>Prolog is often run in a console, so to make this demo more user friendly, a UI is being developed.</b></li>
+                                </ul>
+                            </li>
+                        </ol>
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ===== END ABOUT PAGE =====  -->
+
+</body>
+</html>

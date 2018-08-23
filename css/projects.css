@@ -8,6 +8,10 @@
 	--ffi-animation-delay-5: calc(5 * (var(--fly-fade-in-duration)/2));
 }
 
+html, body{
+    height: 100% ;
+}
+
 .page {
 	height: auto;
 	padding: 20px 0;
