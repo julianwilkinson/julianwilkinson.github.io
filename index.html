@@ -3,345 +3,102 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Julian Wilkinson</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css?2.3">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css?2.3" media="only screen and (max-width: 700px)">
+	<link rel="stylesheet" type="text/css" href="css/style.css?3.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
-	<script src="scripts/main.js?2.3"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-
-	<!-- Begin Favicons -->
-	<meta name="theme-color" content="#6699ff">
-	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<!-- End Favicons -->
 </head>
-
 <body>
-	<div id="banner" style="display: none">
-		<div class="animation-wrapper">
-			<span>This page is currently under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though. :)</span>
-			<span>This page is currently under development. Feel free to <a href="mailto:wilkinsonjulian@gmail.com">contact me</a>, though. :)</span>
-		</div>
-	</div>
-
-	<div class="page" id="home-page">
-		<div id="home">
-			<div class="banner">
-				<h1>Hi! I'm Julian.</h1>
-				<h2>I like helping people with Computer Science.</h2>
-			</div>
-			<div class="main-menu">
-				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact-me">Contact</a>
-			</div>
-		</div>
-	</div>
-	<!-- ===== END HOME PAGE =====  -->
-
-
-	<!-- ===== BEGIN ABOUT PAGE =====  -->
-	<div class="page" id="about">
-		<div class="carousel-wrapper">
-			<div class="carousel-unit" id="about-card-main-carousel-unit">
-				<!-- <div class="header">
-				<h1>Julian</h1>
-			</div> -->
-			<div class="card-wrapper" id="about-card-main">
-				<div class="card">
-					<h1>About Me</h1>
-                    <hr class="full">
-                    <div class="profile-picture-wrapper">
-						<img src="media/me.jpg?3" id="profile-picture"/>
-					</div>
-					<p>
-						Hi! I'm Julian. I'm currently a 4th Year Computer Science major at UC Davis. My passion for Computer Science lies in its ability to help make the lives of others better. There are many unexplored applications of computer science,  both as a standalone applications in addition to its use as a tool to augment and further other fields like Linguistics or Epidemiology and it is my goal to explore those applications.
-					</p>
-				</div>
-			</div>
-
-			<div class="card-wrapper" id="academics-button-card">
-				<div class="card nav-card">
-					<span class="nav-card-label">Academics</span>
-				</div>
-				<div class="nav-card-button-wrapper">
-					<a  onclick="cardRoute(this)" title="Academics" id="academics-button"><i class="material-icons">school</i></a>
-				</div>
-			</div>
-
-<!--
-			<div class="card-wrapper" id="employment-button-card">
-				<div class="card nav-card">
-					<span class="nav-card-label">Employment</span>
-				</div>
-				<div class="nav-card-button-wrapper">
-					<a  onclick="cardRoute(this)" title="Employment" id="employment-button"><i class="material-icons">work</i></a>
-				</div>
-			</div>
--->
-
-			<div class="card-wrapper" id="volunteering-button-card">
-				<div class="card nav-card">
-					<span class="nav-card-label" >Volunteering</span>
-				</div>
-				<div class="nav-card-button-wrapper">
-					<a onclick="cardRoute(this)" id="volunteering-button" title="Volunteering"><i class="material-icons">favorite</i></a>
-				</div>
-			</div>
-		</div>
-		<div class="carousel-unit invisible" id="academics-card-carousel-unit">
-			<div class="card-wrapper">
-				<div class="card header-card">
-					<h1>Academics</h1>
-					<img id="academics-card-animation" src="media/school_icon.svg"/>
-				</div>
-			</div>
-			<div class="card-wrapper" id="academics-card">
-				<div class="card">
-					<h2>University of California, Davis <span style="float: right">2016 - Present</span></h2>
-					<h3>Computer Science Major with a Minor in Linguistics </h3>
-					<h3>Planned Graduation: March 2019</h3>
-					<h3>GPA 3.51</h3>
-					<hr class="medium"/>
-					<h3>Relevant Computer Science Coursework</h3>
-					<ul>
-						<li>Algorithm Design and Analysis</li>
-						<li>Data Structures and Programming</li>
-						<li>Programming and Problem Solving</li>
-						<li>Advanced Programming Languages</li>
-						<li>Probability and Statistical Modelling for Computer Science</li>
-						<li>Computer Architecture</li>
-					</ul>
-					<hr class="small"/>
-					<h3>Relevant Linguistics Coursework</h3>
-					<ul>
-						<li>Corpus Linguistics</li>
-						<li>Computational Linguistics</li>
-						<li>Morphology</li>
-						<li>Linguistic Analysis I: Phonetics, Phonology, and Morphology</li>
-						<li>Linguistic Analysis II: Morphology, Syntax, and Semantics</li>
-						<li>Multilingualism</li>
-					</ul>
-                    <p>Please <a href="mailto:wilkinsonjulian@gmail.com">contact me</a> if you'd like to know more about <i>all</i> of the Computer Science and or Linguistics courses I've taken.</p>
-				</div>
-			</div>
-			<div class="card-wrapper" id="">
-				<div class="card nav-card">
-					<span class="nav-card-label">Back</span>
-				</div>
-				<div class="nav-card-button-wrapper back-button-wrapper">
-					<a title="Back" id="back-academics-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
-				</div>
-			</div>
-		</div>
-<!--
-		<div class="carousel-unit invisible" id="employment-card-carousel-unit">
-			<div class="card-wrapper">
-				<div class="card header-card">
-					<h1>Employment</h1>
-				</div>
-			</div>
-			<div class="card-wrapper" id="employment-card">
-				<div class="card">
-					<h2>Student IT Assistant</h2>
-					<h3>UC Davis Internship and Career Center</h3>
-					<h4>September 2016 - Present</h4>
-				</div>
-			</div>
-			<div class="card-wrapper" id="">
-				<div class="card nav-card">
-					<span class="nav-card-label">Back</span>
-				</div>
-				<div class="nav-card-button-wrapper back-button-wrapper">
-					<a title="Back" id="back-employment-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
-				</div>
-			</div>
-		</div>
--->
-		<div class="carousel-unit invisible" id="volunteering-card-carousel-unit">
-			<div class="card-wrapper">
-				<div class="card header-card">
-					<h1>Volunteering</h1>
-					<i id="volunteering-card-animation" class="material-icons">favorite</i>
-				</div>
-			</div>
-			<div class="card-wrapper" id="volunteering-card">
-				<div class="card">
-					<h2>Anonymous HIV Testing<span style="float: right">2016 - Present</span></h2>
-					<hr class="small" />
-					<p>
-						I currently help provide free and anonymous HIV testing through a joint effort between UC Davis Student Health Education and Promotion and the UC Davis LGBTQIA Center. Every month I
-						explain testing procedure to attendees and schedule their tests. Through this I have gotten a chance to get HIPAA certified and help a worthy cause.
-					</p>
-				</div>
-			</div>
-			<div class="card-wrapper" id="">
-				<div class="card nav-card">
-					<span class="nav-card-label">Back</span>
-				</div>
-				<div class="nav-card-button-wrapper back-button-wrapper">
-					<a title="Back" id="back-volunteering-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- ===== END ABOUT PAGE =====  -->
-
-
-<!-- ===== BEGIN PROJECTS PAGE =====  -->
-<div class="page" id="projects">
-	<div class="header header-card">
-		<div class="card-wrapper" id="project-header-card">
-			<div class="card">
-				<h1>Projects</h1>
-				<hr class="full">
-                <p>
-					These are my most recent projects. Please <a title="wilkinsonjulian@gmail.com" href="#contact-me">let me know</a> if you have any questions or comments.
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="carousel-wrapper">
-		<div class="carousel-unit projects" id="project-page-1">
-			<div class="card project-card" id="safer">
-				<span class="project-card-label">Safer</span>
-				<div class="project-card-background">
-					<img class="logo" src="media/projects/safer_media/safer_logo_image_only.svg">
-				</div>
-				<div class="project-card-button-div">
-					<a href="projects/safer.html" target="_blank" class="project-card-button">LEARN MORE</a>
-				</div>
-			</div>
-
-			<div class="card project-card" id="fraudulent-job-postings">
-				<span class="project-card-label">Fraudulent Jobs Info.</span>
-				<div class="project-card-background">
-					<img class="logo" src="media/projects/icc/logo.svg">
-				</div>
-				<div class="project-card-button-div">
-					<a href="https://icc.ucdavis.edu/find/scams.htm" target="_blank" class="project-card-button">LEARN MORE</a>
-				</div>
-			</div>
-
-            <div class="card project-card" id="wyd">
-				<span class="project-card-label"><i>Wyd?</i></span>
-				<div class="project-card-background">
-					<img class="logo" src="media/projects/wyd/logo.png">
-				</div>
-				<div class="project-card-button-div">
-					<a href="media/projects/wyd/wyd.pdf" target="_blank" class="project-card-button">LEARN MORE</a>
-				</div>
-			</div>
-
-			 <div class="card project-card" id="diaphoneme-swap">
-				<span class="project-card-label">Diaphoneme Swap</span>
-				<div class="project-card-background">
-					<img class="logo" src="media/projects/diaphoneme_swap/swi-prolog.png">
-				</div>
-				<div class="project-card-button-div">
-					<a href="projects/diaphoneme_swap.html" target="_blank" class="project-card-button">LEARN MORE</a>
-				</div>
-			</div>
-
-			 <div class="card project-card" id="rejected-job-postings" title="Coming soon." disabled>
-				<span class="project-card-label">Rejected Job Postings Mgr.</span>
-				<div class="project-card-background">
-					<img class="logo" src="media/projects/icc/logo.svg">
-				</div>
-				<div class="project-card-button-div">
-					<a class="project-card-button">LEARN MORE</a>
-				</div>
-			</div>
-
-      <div class="card project-card invisible"></div>
-
-		</div>
-		<div class="carousel-unit invisible" id="academics-card-carousel-unit">
-			<div class="card-wrapper" id="academics-card">
-				<div class="card">
-					<h1>HIV Testing Assistant</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus aliquet erat. Proin accumsan lectus ut malesuada tincidunt. Proin at iaculis nisi, sit amet vestibulum purus. Suspendisse nunc nunc, posuere at aliquam in, dictum vitae massa. Phasellus sollicitudin maximus justo ut aliquam. Donec ex nisl, egestas non tempus maximus, tempor at ex. Morbi sed ante eu risus sollicitudin aliquam ultrices eget lectus. Praesent in nibh ac sem semper bibendum. Suspendisse viverra justo nec vestibulum consectetur. Aenean quis accumsan magna. Pellentesque at nulla at dui aliquet vulputate vel vestibulum diam. Donec ac lorem nec arcu mollis ornare et sit amet nunc. In dictum metus in urna dapibus tempus. Morbi ullamcorper scelerisque condimentum. Nulla facilisi. Praesent ullamcorper viverra lorem id mattis. Sed rhoncus imperdiet lacus, posuere dictum velit. Sed porttitor pellentesque suscipit. Sed non tortor sit amet metus vehicula ornare. Nullam accumsan, felis quis convallis consequat, turpis leo auctor tellus, et ornare sem dolor eget lacus. Etiam vel quam sed urna semper luctus at vel mauris. Donec et porttitor odio, sit amet blandit nibh. Pellentesque elementum nulla vitae magna vulputate, ut mollis diam vulputate.Pellentesque a arcu justo. Aliquam fermentum nibh est, ac facilisis risus vehicula eu. Suspendisse id aliquet sem. Sed quis leo feugiat, fermentum mauris eget, gravida tellus. Nam euismod eget lorem id venenatis. Praesent elementum sapien at nisi rutrum, sit amet condimentum leo accumsan. Mauris luctus eros tincidunt, ullamcorper elit et, congue justo. Pellentesque efficitur interdum ligula in tincidunt. Aenean non libero et ex tincidunt vehicula molestie at sem. Nulla vitae fermentum urna. Nulla facilisi. Vivamus sollicitudin sagittis lacus tincidunt semper. Cras volutpat enim eu odio laoreet commodo. Vestibulum sed odio suscipit, scelerisque ex id, elementum tellus. Sed nec enim est. Nam gravida leo a metus tincidunt commodo. Suspendisse rhoncus rutrum fermentum. Pellentesque auctor semper varius. Aliquam rhoncus cursus ex ut feugiat. Donec vel neque sapien. Praesent iaculis diam eu velit vehicula fermentum. Sed cursus turpis massa, et pharetra nisi gravida sed. Donec faucibus euismod eros, ut commodo lorem accumsan vel.
-					</p>
-				</div>
-			</div>
-			<div class="card-wrapper" id="">
-				<div class="card nav-card">
-					<span class="project-card-label">Back</span>
-				</div>
-				<div class="nav-card-button-wrapper">
-					<a href="#about" id="back-button" onclick="cardRoute(this)"><i class="material-icons">arrow_back</i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- ===== END PROJECTS PAGE =====  -->
-
-
-<!-- ===== BEGIN CONTACT ME PAGE =====  -->
-<div class="page" id="contact-me">
-	<div class="card-wrapper">
-		<div class="card" id="contact-card-desktop">
-			<h1>Julian Wilkinson</h1>
-			<h2>Computer Science Student at UC Davis</h2>
-			<hr class="full"/>
-			<span>Email: <a title="Email" href="mailto:wilkinsonjulian@gmail.com">wilkinsonjulian@gmail.com</a> </span>
-			<span>LinkedIn®: <a title="LinkedIn®" href="https://www.linkedin.com/in/julianbwilkinson/" target="_blank">julianbwilkinson</a> </span>
-			<span>Resume: <a title="Resume" href="media/Julian_Wilkinson_Resume.pdf" target="_blank">Julian Wilkinson</a></span>
-
-		</div>
-		<div class="card-nav-tab-wrapper">
-			<a id="" title="Email" href="mailto:wilkinsonjulian@gmail.com"><i class="material-icons">email</i></a>
-			<a id="LinkedIn-button" title="LinkedIn®" href="https://www.linkedin.com/in/julianbwilkinson/" target="_blank"><img id="LinkedIn-logo" src="media/LinkedIn/In-2C-128px-R.png" /></a>
-			<a id="" title="Resume" href="media/Julian_Wilkinson_Resume.pdf" download><i class="material-icons">description</i></a>
-			<a title="vCard" href="media/Julian_Wilkinson_vCard.vcf" type="text/vcard"><i id="vCard-logo" class="material-icons">contact_mail</i></a>
-		</div>
-	</div>
-
-	<div class="card-wrapper">
-		<div class="card" id="contact-card-mobile">
-			<h1>Julian Wilkinson</h1>
-			<hr class="full"/>
-			<div class="flex-button-wrapper">
-				<div class="flex-button">
-					<a title="Email" href="mailto:wilkinsonjulian@gmail.com"><i class="material-icons">email</i></a>
-					<label>Email</label>
-				</div>
-				<div class="flex-button">
-					<a title="LinkedIn®" href="https://www.linkedin.com/in/julianbwilkinson/" target="_blank"><img id="LinkedIn-logo-mobile" src="media/LinkedIn/In-2C-128px-R.png" /></a>
-					<label>LinkedIn®</label>
-				</div>
-				<div class="flex-button">
-					<a title="Resume" href="media/Julian_Wilkinson_Resume.pdf" target="_blank"><i class="material-icons">description</i></a>
-					<label>Resume</label>
-				</div>
-				<div class="flex-button">
-					<a title="vCard" href="media/Julian_Wilkinson_vCard.vcf" type="text/vcard"><i class="material-icons">contact_mail</i></a>
-					<label>vCard</label>
-				</div>
-			</div>
-		</div>
-
-		<footer>Made from scratch and with care by Julian Wilkinson. ©Julian Wilkinson 2017</footer>
-	</div>
-	<!-- ===== END CONTACT ME PAGE =====  -->
+    <div class="panel">
+        <header>
+            <span>Julian Wilkinson</span>
+        </header>
+        <div class="content">
+            <div class="page-tile">
+                <img class="circle">
+                <blockquote>I want to work on a product that will help others.</blockquote>
+            </div>
+        </div>
+    </div>
+    
+    <div class="panel">
+        <header>
+            <span>My Projects</span>
+            <img src="media/icons/beaker.png">
+        </header>
+        <div class="content">
+            <a class="project-tile">
+                <img>
+                <div class="text">
+                    <h1 class="">Title</h1>
+                    <span class="hidden">Description</span>
+                    <span class="hidden">Awards / Etc</span>
+                </div>
+            </a>
+            <a class="project-tile">
+                <img>
+                <div class="text">
+                    <h1 class="">Title</h1>
+                    <span class="hidden">Description</span>
+                    <span class="hidden">Awards / Etc</span>
+                </div>
+            </a>
+            <a class="project-tile">
+                <img>
+                <div class="text">
+                    <h1 class="">Title</h1>
+                    <span class="hidden">Description</span>
+                    <span class="hidden">Awards / Etc</span>
+                </div>
+            </a>
+            <a class="project-tile">
+                <img>
+                <div class="text">
+                    <h1 class="">Title</h1>
+                    <span class="hidden">Description</span>
+                    <span class="hidden">Awards / Etc</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="panel">
+        <header>
+            <span>My Life</span>
+        </header>
+        <div class="content">
+            <div class="page-tile">
+                <h1>Academics</h1>
+                <h2>UC Davis</h2>
+                <h2>Graduation: March 2019</h2>
+            </div>
+            <div class="page-tile">
+                <h1>Humanitarian Efforts</h1>
+                <h2>HIV Testing</h2>
+                <h2>Planned Parenthood Support</h2>
+            </div>
+             <div class="page-tile">
+                <h1>Hobbies</h1>
+                <h2>Photography</h2>
+                <h2>CrossFit</h2>
+                <h2>Running</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="panel">
+        <header>
+            <span>My Contact Information</span>
+        </header>
+        <div class="content">
+            <a class="contact-tile">
+                <img>
+                <div class="text">
+                    <h1 class="">Title</h1>
+                    <span class="hidden">Description</span>
+                    <span class="hidden">Awards / Etc</span>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
