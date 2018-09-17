@@ -32,48 +32,41 @@ h1, h2, h3, h4, h5, h6 {
 /* ---- END WEBPAGE LAYOUT ---- */
 
 /* ---- BEGIN PANEL ---- */
-:root {
-    --header-height: 50px;
-    --panel-height: calc(90vh - var(--header-height))
-}
-
 .panel {
-    height: var(--panel-height);
+    height: 90vh;
     width: 280px;
     margin: 5vh 10px;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
-    padding-top: var(--header-height);
 }
 
-.panel::before {
-    filter: blur(50px);
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    left: 0;
-}
 
 .panel header {
-    height: var(--header-height);
+    height: 2.5em;
     width: 280px;;
-    background-color: crimson;
-    position: absolute;
     top: 0;
     z-index: 1;
     display: flex;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
+}
+
+.panel header::before {
+    filter: blur(500px);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    position: absolute;
+    left: 0;
+    z-index: -1;
 }
 
 .panel header span {
-    text-align: center;
-    color: white;
-    font-size: 1.75em;
-    line-height: 1.75em;
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Noto Serif JP', sans-serif;
 }
 .panel header img {
     height: 40px;
@@ -81,12 +74,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .panel .content {
-    border: solid 1px yellow;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     position: relative;
     height: 100%;
 }
+
+.panel .content blockquote {
+    color: #fff;
+}
+
+.panel .content::before {
+    filter: blur(500px);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
 /* ---- END PANEL ---- */
 
 /* ---- BEGIN PROJECT-TILE ---- */
@@ -152,7 +160,7 @@ a.contact-tile {
 
 /* ---- BEGIN PAGE-TILE ---- */
 .page-tile {
-border: solid 1px yellow;    
+/*border: solid 1px yellow;    */
 height: 400px;
 width: 100%;    
 }
@@ -162,7 +170,6 @@ width: 100%;
 img.circle {
     width: 220px;
     height: 220px;
-    background-color: blue;
     border-radius: 100%;
     margin: 10px;
 }
