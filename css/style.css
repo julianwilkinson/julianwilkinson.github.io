@@ -10,6 +10,9 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     background: url("../media/background.svg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     transform: translate3d(0,0,0);
 }
 h1, h2, h3, h4, h5, h6 {
@@ -50,17 +53,19 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .panel header::before {
-    filter: blur(500px);
+/*    filter: blur(500px);*/
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #808080;
+    background-color: rgb(150,150,150);
     position: absolute;
     left: 0;
     z-index: -1;
+    opacity: .2;
 }
 
 .panel header span {
@@ -69,9 +74,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif JP', sans-serif;
 }
 .panel header img {
-    height: 40px;
-    width: 40px;
+    height: 1.6em;
+    width: 1.6em;
 }
+
+.panel header i.material-icons {
+    color: #fff;
+}
+
 
 .panel .content {
     overflow-y: auto;
@@ -80,55 +90,97 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
-.panel .content blockquote {
-    color: #fff;
-}
-
 .panel .content::before {
-    filter: blur(500px);
+/*    filter: blur(500px);*/
     content: "";
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color: #808080;
     position: absolute;
     left: 0;
     z-index: -1;
+    opacity: .25;
 }
+
+.panel .content blockquote {
+    color: #fff;
+    font-family: 'Raleway', serif;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    position: relative;
+    background-color: rgba(200,200,200,.2);
+    width: 86%;
+    margin: 10px auto;
+}
+.panel .content blockquote::before {
+/*    content: "“";*/
+    font-size: 3em;
+    font-family: 'Poppins', serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline;
+    color: rgba(255,255,255,.75)
+/*    height: 3em;*/
+/*    width: 3em;*/
+}
+
+.panel .content hr {
+    display: block;
+    border: none;
+    width: 80%;
+    height: 1px;
+    background-color: #fff;
+}
+
+
 
 /* ---- END PANEL ---- */
 
 /* ---- BEGIN PROJECT-TILE ---- */
 a.project-tile {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 80px;
-    background-color: blue;
-    border: solid 1px yellow;
     align-items: center;
     justify-content: space-between;
-/*    padding: 5px 8px;*/
+    margin: 10px auto;
+    background-color: rgba(215,215,215,.2);
 }
 
 a.project-tile:hover {
     cursor: pointer
 }
 a.project-tile img {
-    background-color: pink;
+    height: 100%;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: block;
+    padding: 10px;
+/*    display: none;*/
+}
+
+a.project-tile .icon-wrapper {
     height: 60px;
     width: 60px;
     flex-grow: 0;
     flex-shrink: 0;
-    border-radius: 100%;
+    border-radius: 50%;
     display: inline;
     margin: 10px;
+/*    background: url(../media/projects/safer_media/safer_icon.svg);*/
+/*    background-size: cover;*/
+/*    background-size: contain;*/
 }
 a.project-tile .text {
 /*    background-color: purple;*/
     flex-direction: row;
     width: 200px;
-    color: white;
+    color: #fff;
     float: right;
     margin: 0 10px;
+    font-family: "Lato", sans-serif
 }
 
 a.project-tile .text h1{
@@ -168,9 +220,25 @@ width: 100%;
 
 /* ---- BEGIN IMG ---- */
 img.circle {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+/* ---- END IMG ---- */
+
+
+/* ---- BEGIN IMAGE-WRAPPER ---- */
+.image-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 100%;
+/*    box-shadow: 0 0 10px 1px rgba(70,70,70,.35) inset;*/
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.35) inset;
     width: 220px;
     height: 220px;
-    border-radius: 100%;
-    margin: 10px;
+    position: relative;
+    margin: 14px auto;
 }
-/* ---- END IMG ---- */
+/* ---- END IMAGE-WRAPPER ---- */
