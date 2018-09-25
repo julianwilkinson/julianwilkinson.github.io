@@ -38,18 +38,20 @@
 /*-------------------- BEGIN BOILERPLATE --------------------*/
 html {
 	overflow-x: hidden;
-/*	background: linear-gradient(to bottom, #6699ff 0%,#a8c5ff 100%);*/
-    background-image: url(../media/background.svg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+}
+
+body {
+	background: url(../media/background.svg) no-repeat center center fixed;
     background-size: cover;
 }
+
 html, body {
 	width: 100%;
 	height: 100%;
     /*Force GPU*/
     transform: translate3d(0,0,0);
 }
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
