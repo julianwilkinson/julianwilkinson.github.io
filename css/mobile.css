@@ -47,6 +47,7 @@ html, body {
 /*-------------------- BEGIN CONTACT CARD --------------------*/
 #contact-me {
 	margin: 0;
+    padding: 0;
 }
 
 #contact-card-mobile {
@@ -134,14 +135,20 @@ html, body {
 /*-------------------- END CONTACT CARD --------------------*/
 
 /*-------------------- BEGIN NOTE CARD --------------------*/
+#mobile-portfolio-note-card {
+    display: block;
+}
+
 #mobile-portfolio-note-card span {
     font-size: 1em;
+    color: rgb(80,80,80);
 }
 
 #mobile-portfolio-note-card i {
     font-size: 3em;
     float: right;
-    color: #808080;
+    color: rgb(210,210,210);
+    margin-right: 7px
 }
 
 /*-------------------- END NOTE CARD --------------------*/
