@@ -27,6 +27,7 @@ html, body {
 	bottom: 0;
 	color: #fff;
 	text-align: center;
+    font-size: 1em;
 }
 /*-------------------- END PAGE WRAPPER --------------------*/
 
@@ -51,7 +52,7 @@ html, body {
 #contact-card-mobile {
 	display: block;
 	flex-direction: column;
-	margin-bottom: 70px;
+	margin-bottom: 10px;
 }
 #contact-card-mobile h1 {
 	text-align: center;
@@ -62,7 +63,7 @@ html, body {
 
 .flex-button-wrapper {
 	display: flex;
-	margin: auto;
+	margin: .9em auto;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
@@ -114,8 +115,9 @@ html, body {
 
 .flex-button label {
 	position: absolute;
-	bottom: 25px;
-	font-size: .75em;
+	bottom: 1.1em;
+	font-size: 1em;
+    font-family: "PT Serif", serif;
 }
 
 #LinkedIn-logo-mobile {
@@ -130,6 +132,19 @@ html, body {
 	display: none;
 }
 /*-------------------- END CONTACT CARD --------------------*/
+
+/*-------------------- BEGIN NOTE CARD --------------------*/
+#mobile-portfolio-note-card span {
+    font-size: 1em;
+}
+
+#mobile-portfolio-note-card i {
+    font-size: 3em;
+    float: right;
+    color: #808080;
+}
+
+/*-------------------- END NOTE CARD --------------------*/
 
 /*-------------------- BEGIN PROJECT CARDS --------------------*/
 .project-card-label {
