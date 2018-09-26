@@ -41,9 +41,12 @@ html {
 }
 
 body {
-	background: url(../media/background.svg) no-repeat center center fixed;
+    /* Fallback Background */
+	background: url(../media/background_fallback.png) no-repeat center center fixed;
+    /* Target Background */
+    background: url(../media/background.svg) no-repeat center center fixed;
     background-size: cover;
-    background-color: #000;
+    background-color: #85a8ff;
 }
 
 html, body {
