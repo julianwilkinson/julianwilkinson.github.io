@@ -37,16 +37,21 @@
 
 /*-------------------- BEGIN BOILERPLATE --------------------*/
 html {
-	overflow-x: hidden;
+/*	overflow-x: hidden;*/
 }
 
 body {
     /* Fallback Background */
-	background: #85a8ff url(../media/background_fallback.png) no-repeat center center fixed;
+	background-color: #85a8ff;
+    background-image: url(../media/background_fallback.png);
     /* Target Background */
-    background: #85a8ff url(../media/background.svg) no-repeat center center fixed;
-    background-size: cover;
-/*    background-color: #85a8ff;*/
+    background-image: url(../media/background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* 100% 100% for scaling */
+    background-size: 100% 100%;
+    overflow: auto;
 }
 
 html, body {

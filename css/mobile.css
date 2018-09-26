@@ -1,5 +1,5 @@
 :root {
-		--card-width: 92vw;
+		--card-width: 92%;
 		--projects-card-width: 100px;
 		--projects-card-height: 180px;
 }
@@ -7,6 +7,8 @@
 /*-------------------- BEGIN MOBILE BOILERPLATE --------------------*/
 html, body {
 	height: 100vh;
+    min-width: 370px;
+    min-height: 580px;
 }
 /*-------------------- END MOBILE BOILERPLATE --------------------*/
 
