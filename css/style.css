@@ -42,11 +42,11 @@ html {
 
 body {
     /* Fallback Background */
-	background: url(../media/background_fallback.png) no-repeat center center fixed;
+	background: #85a8ff url(../media/background_fallback.png) no-repeat center center fixed;
     /* Target Background */
-    background: url(../media/background.svg) no-repeat center center fixed;
+    background: #85a8ff url(../media/background.svg) no-repeat center center fixed;
     background-size: cover;
-    background-color: #85a8ff;
+/*    background-color: #85a8ff;*/
 }
 
 html, body {
