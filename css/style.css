@@ -114,7 +114,8 @@ a, a:link, a:visited, a:hover, a:active {
 
 /*-------------------- BEGIN PAGE WRAPPER --------------------*/
 .page {
-	min-height: 100vh;
+    height: 100vh;
+	min-height: 770px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
