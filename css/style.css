@@ -37,7 +37,6 @@
 
 /*-------------------- BEGIN BOILERPLATE --------------------*/
 html {
-	overflow-x: hidden;
 }
 
 body {
@@ -54,6 +53,7 @@ body {
 }
 
 html, body {
+	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
     /*Force GPU*/
